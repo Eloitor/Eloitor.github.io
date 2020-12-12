@@ -1,0 +1,31 @@
+
+</br>
+<nav class ="topnav">
+  <div class="dropdown">
+  <span class="dropbtn">CV</span>
+  <div class="dropdown-content">
+	  <a href="https://eloitorrents.cat/CV.pdf">català (pdf)</a>
+	  <a href="https://eloitorrents.cat/en/CV.pdf">english (pdf)</a>
+  </div>
+</div>
+  $if(ca)$
+  <a href="projectes">Projectes</a>
+  <a href="apunts">Apunts</a>
+  <a href="contacta.html">Contacta</a>
+  $endif$
+  $if(en)$
+  <a href="projects">Projects</a>
+  <a href="notes">Notes</a>
+  <a href="contact.html">Contact</a>
+  $endif$
+</nav>
+$if(trans)$
+<nav style="text-align: right;">
+$if(trans.ca)$
+<a href="https://eloitorrents.cat$trans.ca$">Català</a>
+$endif$
+$if(trans.en)$
+<a href="https://eloitorrents.cat$trans.en$">English</a>
+$endif$
+$endif$
+</nav>
