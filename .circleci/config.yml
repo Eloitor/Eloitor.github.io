@@ -7,12 +7,15 @@ jobs:
     resource_class: small
     steps:
       - restore_cache:
-          key: v1-my-app  # match any keys *starting with* 'v1-my-app'
+         key: v1-my-app  # match any keys *starting with* 'v1-my-app'
       - checkout
       - run: make
       - run: make
       - save_cache:
-          key: v1-my-app-{{ .BuildNum }}  # save the latest changes
+           name: kdkd
+           key: v1-my-app-{{ .BuildNum }}  # save the latest changes
+           paths:
+             - .
 
 workflows:
   welcome:
