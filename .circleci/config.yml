@@ -8,9 +8,9 @@ jobs:
     steps:
       - restore_cache:
           key: v1-my-app  # match any keys *starting with* 'v1-my-app'
-      - mkdir: ~/.ssh
-      - run: ssh-keyscan github.com >> ~/.ssh/known_hosts
-      - run: git pull --rebase origin main
+#     - mkdir: ~/.ssh
+#     - run: ssh-keyscan github.com >> ~/.ssh/known_hosts
+#     - run: git pull --rebase origin main
 #     - checkout
       - run: make
       - run: make
