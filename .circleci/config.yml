@@ -8,7 +8,7 @@ jobs:
     steps:
       - restore_cache:
           key: v1-my-app  # match any keys *starting with* 'v1-my-app'
-      - run: y | git pull
+      - run: yes | git pull
 #     - checkout
       - run: make
       - run: make
