@@ -11,7 +11,7 @@ jobs:
       - checkout
       - run: make
       - run: make
-      - save_cahce:
+      - save_cache:
           key: v1-my-app-{{ .BuildNum }}  # save the latest changes
 
 workflows:
