@@ -4,6 +4,7 @@ jobs:
   build:
     docker:
       - image: eloitor/pandoc-make
+    resource_class: small
     steps:
       - checkout
       - run: make
