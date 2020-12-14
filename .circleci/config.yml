@@ -8,7 +8,7 @@ jobs:
     steps:
       - restore_cache:
           key: v1-my-app  # match any keys *starting with* 'v1-my-app'
-      - run: echo "yes" | git pull
+      - run: git pull --rebase origin main
 #     - checkout
       - run: make
       - run: make
