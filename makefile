@@ -10,7 +10,7 @@ all: $(html_files) $(other_files_bin) bin/.htaccess
 
 bin/ca/%.html: src/ca/%.md src/templates/webpage.html
 	mkdir -p "$(@D)"
-	pandoc  --template src/templates/webpage.html \
+	pandoc  --template templates/webpage.html \
 		--css $(shell (echo $(patsubst bin/%, %, $(@D)) | sed "s/[^/]*/../g"))/styles.css \
 		-V root=$(shell (echo $(patsubst bin/%, %, $(@D)) | sed "s/[^/]*/../g")) \
 		--metadata title="Eloi Torrents" \
@@ -18,7 +18,7 @@ bin/ca/%.html: src/ca/%.md src/templates/webpage.html
 		$< -o $@
 bin/en/%.html: src/en/%.md src/templates/webpage.html
 	mkdir -p "$(@D)"
-	pandoc  --template src/templates/webpage.html \
+	pandoc  --template templates/webpage.html \
 		--css $(shell echo $(patsubst bin/%, %, $(@D)) | sed "s/[^/]*/../g")/styles.css \
 		--metadata title="Eloi Torrents" \
 		-V en \
