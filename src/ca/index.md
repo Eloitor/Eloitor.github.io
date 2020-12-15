@@ -32,7 +32,7 @@ date: 15 de Desembre de 2020
 </div>
 </div>
 
-
+Com escriure una web desde zero (facil)
 
 ## Publicacions
 
