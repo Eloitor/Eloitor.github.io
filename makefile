@@ -15,7 +15,6 @@ bin/ca/%.html: src/ca/%.md src/templates/webpage.html
 		-V root=$(shell (echo $(patsubst bin/%, %, $(@D)) | sed "s/[^/]*/../g")) \
 		--metadata title="Eloi Torrents" \
 		-V ca \
-		-V last_update="$(shell date +%d-%m-%Y)"\
 		$< -o $@
 bin/en/%.html: src/en/%.md src/templates/webpage.html
 	mkdir -p "$(@D)"
@@ -23,7 +22,6 @@ bin/en/%.html: src/en/%.md src/templates/webpage.html
 		--css $(shell echo $(patsubst bin/%, %, $(@D)) | sed "s/[^/]*/../g")/styles.css \
 		--metadata title="Eloi Torrents" \
 		-V en \
-		-V last_update="$(date +%d-%m-%Y)"\
 		$< -o $@
 
 bin/%: src/%
