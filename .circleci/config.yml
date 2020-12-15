@@ -11,8 +11,9 @@ jobs:
       - add_ssh_keys
 #     - mkdir: ~/.ssh
 #     - run: ssh-keyscan github.com >> ~/.ssh/known_hosts
-      - run: git pull --rebase origin main
+#      - run: git pull --rebase origin main
 #     - checkout
+      - run: git fetch | git rebase origin/main
       - run: make
       - run: make
       - save_cache:
