@@ -30,7 +30,7 @@ jobs:
           server: ${{ secrets.ftp_server }}
           username: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_password }}
-          local-dir: bin
+          local-dir: bin/
       # Runs a set of commands using the runners shell
 #      - name: Run a multi-line script
 #        run: |
