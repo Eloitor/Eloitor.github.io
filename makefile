@@ -25,6 +25,7 @@ bin/en/%.html: src/en/%.md src/templates/webpage.html
 		$< -o $@
 
 bin/%: src/%
+	mkdir -p "$(@D)"
 	cp $< $@
 
 # 	pandoc index.md --template=template.tex --pdf-engine=xelatex -o index.pdf
