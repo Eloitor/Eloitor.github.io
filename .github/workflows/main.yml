@@ -2,12 +2,12 @@
 
 name: Build and publish
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
-    
+
   workflow_dispatch:
 jobs:
   build:
@@ -21,7 +21,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: My_artifact
-          path: bin/*    
+          path: bin/*
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
@@ -29,8 +29,8 @@ jobs:
           username: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_password }}
           local-dir: bin/
-      - name: Auto commit
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Automaic build
-          branch: main
+#      - name: Auto commit
+#        uses: stefanzweifel/git-auto-commit-action@v4
+#        with:
+#          commit_message: Automaic build
+#          branch: main
