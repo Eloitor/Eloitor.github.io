@@ -165,7 +165,7 @@ ul li {
    }
    *{
      margin: 0px;
-     padding: 0px;
+     padding: 5px;
    }
    .row, .navbar {   
     flex-direction: column;
