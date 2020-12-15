@@ -4,6 +4,7 @@ lang: ca
 trans:
  ca: /
  en: /en
+date: 15 de Desembre de 2020
 ---
 > Principalment estudio teoria de nombres, idiomes i programació.
 
