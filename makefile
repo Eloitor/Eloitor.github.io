@@ -8,7 +8,7 @@ other_files_bin = $(patsubst src/%, bin/%, $(other_files_src))
 all: $(html_files) $(other_files_bin) bin/.htaccess
 
 
-bin/ca/%.html: src/ca/%.md src/templates/webpage.html
+bin/ca/%.html: src/ca/%.md templates/webpage.html
 	mkdir -p "$(@D)"
 	pandoc  --template templates/webpage.html \
 		--css $(shell (echo $(patsubst bin/%, %, $(@D)) | sed "s/[^/]*/../g"))/styles.css \
@@ -16,7 +16,7 @@ bin/ca/%.html: src/ca/%.md src/templates/webpage.html
 		--metadata title="Eloi Torrents" \
 		-V ca \
 		$< -o $@
-bin/en/%.html: src/en/%.md src/templates/webpage.html
+bin/en/%.html: src/en/%.md templates/webpage.html
 	mkdir -p "$(@D)"
 	pandoc  --template templates/webpage.html \
 		--css $(shell echo $(patsubst bin/%, %, $(@D)) | sed "s/[^/]*/../g")/styles.css \
