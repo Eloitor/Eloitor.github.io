@@ -38,7 +38,7 @@ trans:
 - Understanding the factorization of polynomials modulo p via modular forms (TFM, 2020)
 - Geodèsiques en l'elipsoide de Monge (TFG, 2019)
 
-## Links interessants
+<!-- ## Links interessants
 
-Explicació de productes tensorials: 
+Explicació de productes tensorials: -->
 
