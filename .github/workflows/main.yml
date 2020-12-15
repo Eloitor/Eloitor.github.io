@@ -20,7 +20,7 @@ jobs:
       - name: Build
         run: make
       - name: Save build files
-      - uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
           name: My_artifact
           path: bin/*
