@@ -12,7 +12,7 @@ jobs:
 #     - mkdir: ~/.ssh
 #     - run: ssh-keyscan github.com >> ~/.ssh/known_hosts
 #      - run: git pull --rebase origin main
-     - checkout
+      - checkout
 #      - run: git fetch | git rebase origin/main
       - run: make
       - run: make
