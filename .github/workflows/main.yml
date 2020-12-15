@@ -30,7 +30,7 @@ jobs:
           password: ${{ secrets.ftp_password }}
           local-dir: bin/
       - name: Auto commit
-        uses: stefanzweifel/git-auto-commit-action@v4.7.2
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Automaic build
           branch: main
