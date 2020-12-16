@@ -1,4 +1,6 @@
-# Com construïr un gestor de finestres?
+---
+Title: Com construïr un gestor de finestres?
+---
 
 Un gestor de finestres és un programa que s'encarrega de gestionar les finestres d'X.
 
