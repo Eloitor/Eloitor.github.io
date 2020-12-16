@@ -14,8 +14,7 @@ date: 15 de Desembre de 2020
 
 - [Teoria de cossos de classe](teoria_de_nombres/teoria_de_cossos_de_classe)
 - [Formes modulars](formes_modulars.html)
-</div>
-<div>
+
 **lean**
 
 - [Formes quadràtiques](lean/formes_quadratiques.html)
