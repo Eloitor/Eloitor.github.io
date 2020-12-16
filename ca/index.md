@@ -21,7 +21,6 @@ date: 15 de Desembre de 2020
 - Series theta
 - [Subgrups de congruències](https://github.com/Eloitor/Modular-forms-in-Lean/tree/master/src/CongruenceSubgroups)
 
-	
 **Linux**
 
 - [Les meves configuracions](https://github.com/Eloitor/dotfiles)
