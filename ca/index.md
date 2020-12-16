@@ -10,8 +10,6 @@ date: 15 de Desembre de 2020
 
 ## Interessos
 
-<div class="square-group">
-<div>
 **Teoria de nombres**
 
 - [Teoria de cossos de classe](teoria_de_nombres/teoria_de_cossos_de_classe)
@@ -23,14 +21,13 @@ date: 15 de Desembre de 2020
 - [Formes quadràtiques](lean/formes_quadratiques.html)
 - Series theta
 - [Subgrups de congruències](https://github.com/Eloitor/Modular-forms-in-Lean/tree/master/src/CongruenceSubgroups)
-</div>
-<div>
+
+	
 **Linux**
 
 - [Les meves configuracions](https://github.com/Eloitor/dotfiles)
 - [Escriu el teu gestor de finestres!](linux/gestor_de_finestres)
-</div>
-</div>
+
 
 Com escriure una web desde zero (facil)
 
