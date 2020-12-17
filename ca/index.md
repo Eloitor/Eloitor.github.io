@@ -1,5 +1,5 @@
 ---
-title: Eloi Torrents
+title: 
 date: 15 de Desembre de 2020
 layout: post
 type: static
