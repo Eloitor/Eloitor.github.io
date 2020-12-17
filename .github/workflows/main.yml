@@ -26,13 +26,14 @@ jobs:
         with:
           name: My_artifact
           path: _site/*
+      - run: mv _site site
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ${{ secrets.ftp_server }}
           username: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_password }}
-          local-dir: _site/
+          local-dir: site/
 #      - name: Auto commit
 #        uses: stefanzweifel/git-auto-commit-action@v4
 #        with:
