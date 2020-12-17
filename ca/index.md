@@ -25,7 +25,7 @@ type: static
 - [Escriu el teu gestor de finestres!](linux/gestor_de_finestres)
 
 
-Com escriure una web desde zero (facil)
+[Com escriure una web desde zero (facil)](web-desde-zero)
 
 ## Publicacions
 
