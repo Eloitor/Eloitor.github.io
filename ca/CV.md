@@ -1,4 +1,8 @@
-# Eloi Torrents Juste
+---
+title: Curriculum Vitae
+layout: default
+type: not-static
+---
 
 eloi.torrentsj@gmail.com •  www.github.com/eloitor
 
@@ -15,11 +19,11 @@ Grau en Matemàtiques, 2015-2019
 ---
 
 ## Formació
-`2019-2020`     Master's degree in Advanced Mathematics and Mathematical Engineering
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Universitat Politècnica de Catalunya
+`2019-2020`     Master's degree in Advanced Mathematics and Mathematical Engineering  
+Universitat Politècnica de Catalunya
 
-`2015-2019`&nbsp&nbsp&nbsp&nbsp&nbsp&nbspGrau de Matemàtiques
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspUniversitat Autònoma de Barcelona
+`2015-2019` Grau de Matemàtiques  
+Universitat Autònoma de Barcelona
 
 ---
 

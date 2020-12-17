@@ -1,5 +1,7 @@
-
-# Teoria de cossos de classe
+---
+title: Teoria de cossos de classe
+type: "helo"
+---
 
 
 Donat un cos de nombres $K$, es pot calular el seu grup de classes.

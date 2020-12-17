@@ -1,5 +1,7 @@
 ---
 title: Àlgebres de quaternions
+style: post
+layout: default
 ---
 
 $B/\mathbb Q$ àlgebra de quaternions .

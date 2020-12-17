@@ -1,5 +1,7 @@
-# Splitting d'algebres de quaternions
-
+---
+title: Splitting d'algebres de quaternions
+type: "hola"
+---
 
 Una àlgebra de quaternions $B/F$ és **split** si $B\cong M_2(F)$.
 

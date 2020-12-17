@@ -1,5 +1,6 @@
 ---
 title: Eloi Torrents
+layout: default
 ---
 
 ## Interests
