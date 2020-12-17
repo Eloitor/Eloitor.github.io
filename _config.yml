@@ -31,7 +31,6 @@ github_username:  Eloitor
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-ftp
 
 defaults:
   - scope:
