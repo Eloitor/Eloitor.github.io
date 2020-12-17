@@ -1,4 +1,10 @@
+---
+title: Programes que faig servir
+modified: 2020-12-17T12:41:08+01:00
+---
+
 # Programes
+
 Visualitzadors / editos de documents que faig servir:
 
  Document | Visualitzador
