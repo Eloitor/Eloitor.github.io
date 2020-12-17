@@ -1,6 +1,7 @@
 ---
 title: Teoria de cossos de classe
 type: "helo"
+layout: default
 ---
 
 
