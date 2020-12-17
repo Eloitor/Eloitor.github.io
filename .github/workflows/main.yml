@@ -1,0 +1,36 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Build and publish
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: docker://eloitor/pandoc-make
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        run: make
+      - name: Save build files
+        uses: actions/upload-artifact@v2
+        with:
+          name: My_artifact
+          path: bin/*
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.ftp_server }}
+          username: ${{ secrets.ftp_user }}
+          password: ${{ secrets.ftp_password }}
+          local-dir: bin/
+#      - name: Auto commit
+#        uses: stefanzweifel/git-auto-commit-action@v4
+#        with:
+#          commit_message: Automaic build
+#          branch: main
