@@ -22,7 +22,7 @@ jobs:
       - name: Build
         uses: helaili/jekyll-action@2.0.4
         env:
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+#          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
       - name: Save build files
         uses: actions/upload-artifact@v2
         with:
