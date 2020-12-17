@@ -3,14 +3,14 @@
 }
 
 header {
-  margin: 100px;
-  margin-top: 5px;
+/*  margin: 100px;*/
+/*  margin-top: 5px;*/
   padding: 30px;
   text-align: center;
   background-color: #b5ddb3;
   margin-bottom: 80px;
-  border-radius: 25px;
-  box-sizing: border-box; 
+/*border-radius: 25px;*/
+  box-sizing: border-box;
 }
 
 /* Style the top navigation bar */
@@ -85,7 +85,7 @@ body {
 }
 
 /* Column container */
-.row {  
+.row {
   display: flex;
   flex-wrap: wrap;
 }
@@ -102,7 +102,7 @@ body {
 }
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-  .row, .navbar {   
+  .row, .navbar {
     flex-direction: column;
   }
   .main, .side {
@@ -123,32 +123,14 @@ footer{
 	margin-left:auto;
 	margin-right:auto;
 }
-.square-group {
-  display: flex;
-  margin-bottom: 10px;
-  flex-wrap: wrap;
-}
-.square-group div{
-  display: block; 
-  width: 40%;
-  background-color: lightblue;
-  padding: 10px;
-  padding-left: 12px;
-  margin: 10px 10px;
-  border: 2px solid #73AD21;
-  border-radius: 25px;
-}
-.square-group div ul {
-  padding-inline: 4%;
-  margin: 10px;
-}
+
 
 ul li {
   margin-top: 10px;
 }
 
 
-/* 
+/*
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
@@ -166,7 +148,7 @@ ul li {
      margin: 0px;
      padding: 5px;
    }
-   .row, .navbar {   
+   .row, .navbar {
     flex-direction: column;
     }
    /* CSS */
