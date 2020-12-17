@@ -4,6 +4,7 @@ type: "helo"
 layout: default
 ---
 
+# Teoria de cossos de classe
 
 Donat un cos de nombres $K$, es pot calular el seu grup de classes.
 
