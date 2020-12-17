@@ -17,8 +17,6 @@ jobs:
         with:
           path: vendor/bunde
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
-          store-keys: |
-            ${{ runner.os }}-gems-
       - name: Build
         uses: jerryjvl/jekyll-build-action@v1
 #        env:
