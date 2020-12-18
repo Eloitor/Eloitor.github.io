@@ -21,7 +21,6 @@ type: static
 - [Formes quadràtiques](lean/formes_quadratiques.html)
 </div>
 <div markdown="1">
-
 **Linux**
 
 - [Les meves configuracions](https://github.com/Eloitor/dotfiles)
@@ -29,7 +28,13 @@ type: static
 </div>
 </div>
 
+## Tutorials
+
 [Com escriure una web desde zero (facil)](web-desde-zero)
+
+## Ajuda'm
+
+Com escriure un blog Jekyll i Latex, compatible amb les pagines de github?
 
 ## Publicacions
 
