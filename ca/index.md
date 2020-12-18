@@ -4,7 +4,7 @@ date: 15 de Desembre de 2020
 layout: home
 type: static
 ---
-> Principalment estudio teoria de nombres, idiomes i programació.
+> Teoria de nombres, idiomes i programació.
 
 ## Interessos
 
