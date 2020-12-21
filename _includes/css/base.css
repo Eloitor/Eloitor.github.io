@@ -106,11 +106,11 @@ img {
   max-width:100%;
 }
 
-header {
+/*header {
   width:270px;
   float:left;
   position:fixed;
-}
+}*/
 
 header ul {
   list-style:square;

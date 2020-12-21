@@ -12,10 +12,6 @@ math: true
 - [Escriu el teu gestor de finestres!](linux/gestor_de_finestres)
 - [Com escriure una web desde zero (facil)](web-desde-zero)
 
-## Dubtes que tinc:
-- Es pot escriure un blog amb Jekyll i Latex, compatible amb les pagines de github?
-
-Aqui va una prova: $x^2$.
 ## Publicacions
 
 - Understanding the factorization of polynomials modulo p via modular forms (TFM, 2020)
