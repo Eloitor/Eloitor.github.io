@@ -1,19 +1,11 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog.
-#
 # This file is *NOT* reloaded automatically when you use 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
 # If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
-# Personalize site settings
-# In the HTML files they are accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 
-title: Eloi Torrents
+title: Eloi Torrents #Accessed via {{site.title}}
 email: eloi@eloitorrents.cat
 description: >-
     Teoria de nombres, idiomes i programació.
@@ -45,12 +37,12 @@ kramdown:
   math_engine: null
   #  html_to_native: true
 
-katex:
+#katex:
 #   js_path: "{{ Gem::lib_path }}/assets/js"  # Path used to search for katex.min.js
-  rendering_options:
+#  rendering_options:
     # Default KaTeX rendering options. See https://github.com/Khan/KaTeX#rendering-options
-    throw_error: true
-    error_color: "#cc0000"
+    #    throw_error: true
+    #error_color: "#cc0000"
 
 # Excuded items by default:
 # exclude:
