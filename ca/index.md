@@ -12,7 +12,7 @@ type: static
 - [Com escriure una web desde zero (facil)](web-desde-zero)
 
 ## Dubtes que tinc:
-- Com escriure un blog Jekyll i Latex, compatible amb les pagines de github?
+- Es pot escriure un blog amb Jekyll i Latex, compatible amb les pagines de github?
 
 ## Publicacions
 
