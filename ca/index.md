@@ -3,6 +3,7 @@ title:
 date: 15 de Desembre de 2020
 layout: home
 type: static
+math: true
 ---
 > Teoria de nombres, idiomes i programació.
 
