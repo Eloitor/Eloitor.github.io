@@ -4,8 +4,6 @@ layout: default
 type: not-static
 ---
 
-eloi.torrentsj@gmail.com •  www.github.com/eloitor
-
 Principalment estudio matemàtiques, idiomes i programació.
 
 ## Formació
