@@ -514,6 +514,17 @@
     };
     version = "0.1.2";
   };
+  jekyll-theme-leaf = {
+    dependencies = ["jekyll" "jekyll-feed" "jekyll-seo-tag"];
+    groups = ["jekyll_plugins"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "0ad4b1cjijb66d23dhi6k662z126r5zlqrm7lq6ngnnkm6ijk3jq";
+      type = "gem";
+    };
+    version = "0.1.0";
+  };
   jekyll-theme-leap-day = {
     dependencies = ["jekyll" "jekyll-seo-tag"];
     groups = ["default" "jekyll_plugins"];

@@ -14,7 +14,9 @@ url: "https://eloitorrents.cat"
 github_username:  Eloitor
 
 # Build settings
-theme: minima
+
+#theme: minima
+# theme: jekyll-theme-leaf
 plugins:
   - jekyll-feed
   - jekyll-katex
