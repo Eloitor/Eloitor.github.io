@@ -37,10 +37,12 @@ Com escriure una web desde zero (facil)
 
 ## Publicacions
 
-- Understanding the factorization of polynomials modulo p via modular forms (TFM, 2020)
+- Understanding the factorization of polynomials modulo $p$ via modular forms (TFM, 2020)
 - Geodèsiques en l'elipsoide de Monge (TFG, 2019)
 
-$\int_0^\infty x^2 dx$
+Inline math $x^3$
+
+$$\int_0^\infty x^2 dx$$
 
 <!-- ## Links interessants
 
