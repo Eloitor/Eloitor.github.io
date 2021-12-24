@@ -5,6 +5,7 @@ trans:
  ca: /
  en: /en
 date: 15 de Desembre de 2020
+math: true
 ---
 > Principalment estudio teoria de nombres, idiomes i programació.
 
@@ -38,6 +39,8 @@ Com escriure una web desde zero (facil)
 
 - Understanding the factorization of polynomials modulo p via modular forms (TFM, 2020)
 - Geodèsiques en l'elipsoide de Monge (TFG, 2019)
+
+$\int_0^\infty x^2 dx$
 
 <!-- ## Links interessants
 
