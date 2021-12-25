@@ -11,13 +11,11 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    runs-on: ubuntu-latest
     container: docker://eloitor/pandoc-make
     steps:
       - name: Install dependencies
         run: |
-          apt-get update
-          apt-get install -y rsync
+          apk add --no-cache rsync
       - uses: actions/checkout@v2
       - name: Build
         run: |
