@@ -4,7 +4,7 @@ html_files = $(patsubst src/%.md, web/%.html, $(md_files))
 other_files_src = $(shell find src/ -type f \( -iname \*.jpg -o -iname \*.png -o -iname \*.css -o -iname \*.html \))
 other_files_web = $(patsubst src/%, web/%, $(other_files_src))
 
-.PHONY: all clean
+.PHONY: all clean watch
 all: $(html_files) $(other_files_web)
 
 web/%.html: src/%.md templates/webpage.html
@@ -27,4 +27,9 @@ web/%: src/%
 clean:
 	rm -rf web
 
-# 	pandoc index.md --template=template.tex --pdf-engine=xelatex -o index.pdf
+serve:
+	make all
+	$(shell \
+	while sleep 0.1; do echo 'src' | entr -d -z make all && \
+		echo 'templates' | entr -d -z make all; \
+	done)
