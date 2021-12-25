@@ -1,25 +1,38 @@
 # markdown_web
 
-I write my web pages in [markdown](https://en.wikipedia.org/wiki/Markdown), a simple plain text format, and I convert them to HTML using [Pandoc](https://pandoc.org/).
+I write my web in [markdown](https://en.wikipedia.org/wiki/Markdown), a simple plain text format, and I convert the sources to HTML using [Pandoc](https://pandoc.org/).
+
+See it in action:
+
+https://eloitor.github.io
+
 
 ## Features:
 
 - Markdown
 - Fast build time
 - Multilingual
-- No dependencies
-- No server
+    - Write each language in a separate folder. Don't forget to add the language to the `templates/nav.html` file.
+    - The base url redirects to the default language. (Configured in `src/index.html`)
+- No server required
+- CI (Continuous integration)
 
 ## Requirements:
 
-- pandoc
-- make
+- `pandoc`
+- `make`
+- `entr` (optional)
 
 ## Build process:
 
 ```
-make
+make clean  # remove all generated files
+
+make        # build the HTML files        
+
+make auto   # build the HTML files every time a source file changes (uses entr)
 ```
+
 
 ## Deploy to Codeberg
 
