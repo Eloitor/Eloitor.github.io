@@ -8,6 +8,8 @@ other_files_web = $(patsubst src/%, web/%, $(other_files_src))
 .PHONY: all
 all: $(html_files) $(other_files_web)
 
+mkdir -p web
+
 web/%.html: src/%.md templates/webpage.html
 
 	$(eval lang=$(word 2,$(subst /," ",$@)))
