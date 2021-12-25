@@ -12,10 +12,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: docker://eloitor/pandoc-make
+    container: docker://pandoc/alpine:2.14.0.2
     steps:
       - name: Install dependencies
         run: |
+          apk add --no-cache make
           apk add --no-cache rsync
           pandoc --version
       - uses: actions/checkout@v2
