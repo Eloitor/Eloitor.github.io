@@ -1,4 +1,4 @@
 
 # Error 404: **PÀGINA NO TROBADA**
 
-Tornar a la pàgina principal: <eloitorrents.cat>
+Tornar a la pàgina principal: <eloitor.github.com>

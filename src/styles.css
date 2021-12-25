@@ -124,24 +124,16 @@ footer{
 	margin-left:auto;
 	margin-right:auto;
 }
-.square-group {
-  display: flex;
-  margin-bottom: 10px;
-  flex-wrap: wrap;
-}
-.square-group div{
+
+.square {
   display: block; 
-  width: 40%;
+  width: 80%;
   background-color: lightblue;
   padding: 10px;
   padding-left: 12px;
   margin: 10px 10px;
   border: 2px solid #73AD21;
   border-radius: 25px;
-}
-.square-group div ul {
-  padding-inline: 4%;
-  margin: 10px;
 }
 
 ul li {

@@ -1,5 +1,6 @@
 md_files = $(shell find src/ -type f -name '*.md')
 html_files = $(patsubst src/%.md, web/%.html, $(md_files))
+templates = $(shell find templates/ -type f -name '*.html')
 
 other_files_src = $(shell find src/ -type f \( -iname \*.jpg -o -iname \*.png -o -iname \*.css -o -iname \*.html \))
 other_files_web = $(patsubst src/%, web/%, $(other_files_src))
@@ -7,7 +8,7 @@ other_files_web = $(patsubst src/%, web/%, $(other_files_src))
 .PHONY: all clean auto
 all: $(html_files) $(other_files_web)
 
-web/%.html: src/%.md templates/webpage.html
+web/%.html: src/%.md $(templates)
 
 	$(eval lang=$(word 2,$(subst /," ",$@)))
 
@@ -28,6 +29,7 @@ clean:
 	rm -rf web
 
 auto:
+	make clean
 	make all
 	$(shell \
 	while sleep 0.1; do echo 'src' | entr -d -z make all && \
