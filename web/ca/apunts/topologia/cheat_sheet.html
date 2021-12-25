@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Eloi Torrents</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../../styles.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Eloi Torrents</h1>
+
+</br>
+<nav class ="topnav">
+  <div class="dropdown">
+  <span class="dropbtn">CV</span>
+  <div class="dropdown-content">
+	  <a href="https://eloitorrents.cat/CV.pdf">català (pdf)</a>
+	  <a href="https://eloitorrents.cat/en/CV.pdf">english (pdf)</a>
+  </div>
+</div>
+    <a href="projectes">Projectes</a>
+  <a href="apunts">Apunts</a>
+  <a href="contacta.html">Contacta</a>
+    </nav>
+</nav></header>
+<div class="row">
+
+  <div class="main">
+<p>$f(<em>{iI}A_i)=</em>{iI} f(A_i)$ $f(<em>{iI}A_i)</em>{iI} f(A_i)$ igualtat si f és injectiva. $f^{-1}(<em>{iI}A_i)=</em>{iI} f^{-1}(A_i)$ $f^{-1}(<em>{iI}A_i)= </em>{iI} f^{-1}(A_i)$ $f<sup>{-1}(AB)=f</sup>{-1}(A)f^{-1}(B)$ ?? [[prop1]] $Xf^{-1}(f(X))$ igualtat si f injectiva. $f^{-1}(f(Y))Y$ igualtat si f exhaustiva.</p>
+<h1 id="axiomàtica-despai-topològic">Axiomàtica d’espai topològic</h1>
+<p>$0, XT$, $<em>{i=1}^n A_i T$, $</em>{iI} A_i T$</p>
+<p>Si $T T’$ diem que $T’$ és mes fina que $T$. ## Algunes topologies - <strong>Grollera:</strong> $T={,X}$ - <strong>Discreta:</strong> $T=(X)$ - <strong>Cofinita:</strong> $AX$ obert $A=$ o $X-A$ és finit</p>
+<p><strong>Propietat de Hausdorff:</strong> Donats dos punts $xy$ existeixen oberts disjunts $U,V$ tals que $xU, y V$.</p>
+<p>[[Tot_espai_metric_es_Hausdorff | Tot espai mètric és Hausdorff]].</p>
+<p>No són Hausdorff: a) $X$ amb més d’un punt amb la topologia grollera. b) Un espai infinit amb la topologia cofinita c) $R$ amb oberts $, R, (-,x)xR$</p>
+<h2 id="bases-duna-topologia">Bases d’una topologia</h2>
+<p>$B$ és una base d’una topologia si $A$ obert d’$X$ i tot punt $xA$, existeix un obert $B$ tal que $xBA$. També és diu que $$ és una base d’oberts de $X$</p>
+<p><strong>Proposició 2.2</strong> Sigui X un conjunt $(X)$. Si $$ compleix  $B= X$  $U,V$ i $xUV$, $W$ tal que $xW U V.$ Aleshores $!$ topologia $a X$ que compleix</p>
+<ol type="1">
+<li>$B$ és una base de la topologia $T$</li>
+<li>$T$ és la topologia més fina que conté $B$</li>
+</ol>
+<h2 id="entorns-interior-i-adherència">Entorns interior i adherència</h2>
+<p>$A$ és un <strong>entorn</strong> de $xX$ si existeix un obert $U$ tal que $xU A.$</p>
+<p>$x$ és un punt interior de $A$ si $A$ és un entorn de $x$</p>
+<p>L’interior de $A$ és el conjunt de tots els punts interiors.</p>
+<ol type="1">
+<li>$(A)$ és obert.</li>
+<li>$(A)$ és la unió de tots els oberts continguts a A.</li>
+<li>$(A)$ és l’obert més gran contingut a A. ($BA$ obert $B(A)$
+$A$ és obert $A=(A)$</li>
+</ol>
+<p>$x$ és un punt adherent a $A$ si tot entorn de $x$ talla $A$</p>
+<p>L’adherència de $A$ és el conjunt de tots els punts adherents.</p>
+<ol type="1">
+<li>$(A)$ és tancat.</li>
+<li>$(A)$ és intersecció de tots els tancats que contenen A.</li>
+<li>$(A)$ és el tancat més petit que conté A ($AT$ T tancat $(A)T$)
+$A$ és tancat $A=(A)$</li>
+</ol>
+<p><strong>Proposició 2.5</strong> $(A)=X-(X-A)$</p>
+<p><strong>Definició 2.6</strong> $AX$ és dens si $(A)=X$</p>
+<p><strong>Definició 2.7</strong> La frontera d’un conjunt $AX$ és defineix com $A:=(A)(X-A)$</p>
+<h2 id="aplicacions-contínues">Aplicacions contínues</h2>
+<p>$f$ és <strong>oberta</strong> si la imatge de tot obert és obert.</p>
+<p>$f$ és <strong>tancada</strong> si la imatge de tot tancat és tancat.</p>
+<p>$f$ és <strong>contínua</strong> si la antiimatge de tot obert és obert.</p>
+<h2 id="homeomorfísmes">Homeomorfísmes</h2>
+<p>$f:XY$ diem que es homeomorfísme si compleix: f és contínua, bijectiva $f^{-1}:YX$ contínua (o f és oberta)</p>
+<p><strong>Teorema 3.3</strong> Siguin $f:XY$ i $g:YZ$ aplicacions contínues. Suposem que es compleixen aquestes condicions: 1. f és exhaustiva i g és bijectiva 2. Z compleix la propietat de Hausdorff 3. X és homeomorf a un subesai tancat de $[0,1]^n$, $n&gt;0$</p>
+<p>Aleshores g és un homeomorfisme.</p>
+<h1 id="subespais">Subespais</h1>
+<p><strong>Definició 4.1</strong> Sigui X un espai topològic i $AX$.Direm que $UA$ és un obert de A si existeix un obert W (de X) tal que $U=AW$</p>
+<p>Els oberts de A formen la topologia induïda per la inclusió $AX$. Diem que A és subespai de X</p>
+<ol type="1">
+<li>$TA$ és tancat de A $$ existeix un tancat $K X$ tal que $T=AK$.</li>
+<li>Si $A$ obert, llavors $U A$ obert a A $U$ obert a $X$.</li>
+<li>Si $A$ tancat, llavors $U A$ tancat a A $U$ tancat a $X$.</li>
+<li>l’aplicació inclusió $i:AX$ és contínua.</li>
+<li>La topologia induïda sobre A és la menys fina que fa que la inclusió $i:AX$ sigui contínua.</li>
+<li>Si $f:XY$ és contínua, aleshores $f|_A:AX$ també ho és.</li>
+<li>Si X espai mètric amb distància d, $AX$ La topologia donada per la distància d i la topologia induïda per la topologia de X coincideixen.</li>
+<li>$f:AX$ una aplicació, podem definir una topologia sobre A que tingui per oberts els conjunts $f^{-1}(U)$ per a cada obert U de X.</li>
+</ol>
+<p><strong>Continuïtat de funcions definides a trossos</strong> Siguin $X=AB, Y$ espais topològics i sigui $f:XY$ una aplicació. Suposem que $f|_A, f|_B$ són contínues. Aleshores: 1. Si A,B són oberts, f és contínua. 2. Si A, B són tancats, f és contínua.</p>
+<h1 id="la-topologia-producte">La topologia producte</h1>
+<p>la <strong>topologia producte</strong> a $XY$ és la topologia que té per base els conjunts de la forma $UV$ on U és obert de X i V és obert de Y. Anomenem els oberts $XY$ <strong>oberts bàsics</strong></p>
+<ol type="1">
+<li>les projeccions $_X:XY X$,$_Y:XY Y$ són contínues.</li>
+<li>Una aplicació $f:ZXY$ és contínua si i només si els seus components són contínues, és a dir, si i només si $_Xf$ i $_Yf$ són aplicacións contínues.</li>
+<li>Les projeccions $_X,_Y$ són obertes. (En general no són tancades).</li>
+<li>Si $f_i:X_iY_i, i=1,2$ són aplicacions contínues, aleshores $f_1 f_2:X_1X_2Y_1Y_2$ també és contínua.</li>
+<li>Si $X_1X_2$ i $Y_1Y_2$, aleshores $X_1Y_1 X_2Y_2$</li>
+<li>$X{*} X$</li>
+<li>$XY YX$</li>
+<li>Si $AX, BY$ i considerem $AB X Y$. La topologia induïda sobre $AB$ com a subespai de $XY$ i la topologia $AB$ considerant que A i B són espais topològics coincideixen.</li>
+<li>$R^n$ amb la topologia induïda per la distància euclidiana i la topologia producte $R^n=RR$ coincideixen.</li>
+</ol>
+<p>La <strong>topologia producte</strong> a $X_i$ és la topologia que té com a base d’oberts els productes $_{iI}U_i$ tals que  Cada $U_i$ és un obert de $X_i$.  $U_i=X_i$ excepte per a un nombre finit de $i I$.</p>
+<p>El <strong>conjunt de Cantor C</strong> és homeomorf a $_{i=1}^{a,b}$</p>
+<p>%La corva de peano… # La topologia quocient Suposem que $X$ és un espai topològic, Y és un conjunt i $p:XY$ és una aplicació exhaustiva. La <strong>topologia quocient</strong> a $Y$ és la topologia que té per oberts els subconjunts $UY$ que tenen la propietat que $p^{-1}(U)$ és un obert de X. Direm que Y té la topologia quocient per p. $p:XY$ és continua. 2. La topologia quocient és la topologia més fina sobre Y que fa que $p:XY$ sigui continua. 3. $TY$ és tancat si i només si $p^{-1}(T)$ és tancat de X. 4. Sigui $f:YZ$ una aplicació. Es compleix qe f és continua si i només si $f_p$ és continua.</p>
+<h2 id="lespai-projectiu">L’espai projectiu</h2>
+<p>L’<strong>espai projectiu</strong> de dimensió n $RP^n$ és el conjunt de rectes de $R^{n+1}$ que passen per l’origen de coordenades. $RP^2 D<sup>2/{(x,y)(-x,-y)(x,y)S</sup>1 D^2}$ $RP^n S^n/{-vv}$</p>
+$(MD<sup>2)/RP</sup>2$ on $$ és la identificació natural entre $S<sup>1D</sup>2$ i $S^1M$
+<p>Una  consisteix en tenir, per cada $gG$, una aplicació continua $_g:XX$ de manera que  $_1$ és la identitat $I:XX$.  $_g<em>h=</em>{gh} g,h G$</p>
+<p>$xy$ si i només si existeix $gG$ tal que gx=y. La aplicació de pas al quocient $:XX/G:=X/$ és oberta.</p>
+<h1 id="espais-compactes">Espais compactes</h1>
+<h2 id="recobriments">Recobriments</h2>
+<ol type="1">
+<li>${U_i}_{iI}$ és un recobriment d’un espai X si $X=U_i$</li>
+<li>Si $U_i$ són oberts, ${U_i}$ és un recobriment obert.</li>
+</ol>
+<p>Un espai topològic $X$ direm que és <strong>compacte</strong> si tot recobriment obert de X té algun subrecobriment finit.</p>
+<ol type="1">
+<li>La imatge d’un compacte per una aplicació continua és un compacte.</li>
+<li>Un subespai tancat d’un espai compacte és compacte.</li>
+<li>El producte d’una família d’espais compactes no buits és compacte si i només si cada espai ho és. %
+%Siguin $X$ i $Y$ espais topològics i definim $map(X,Y)={f:XY: }$.</li>
+</ol>
+%Per a cada $AX$ i $B Y$, podem consider $_{(A,B)}:={f(X,Y) : F(A)B}$
+<p> Un subespai de $R^n$ - topologia ordinària- és compacte si i només si és tancat i acotat.</p>
+<h2 id="compactificació-per-un-punt">Compactificació per un punt</h2>
+<p>Sigui $X$ un espai topològic. Definim $=X{<em>}$. Direm que $U $ és un obert si es compleix una de les següents condicions:  $U$ i $U$ és un obert de $X$.  $U=U’{</em>}$, $U’$ és un obert de $X$ i $X-U’$ és un compacte.</p>
+<p>L’espai $X$ té la topologia induïda per la inclusió $X$. L’espai $$ és comacte.</p>
+<p>La compactificació per un punt de $R^n$ és homeomorf a $S^n$</p>
+<h1 id="espais-de-hausdorff">Espais de Hausdorff</h1>
+<ul>
+<li>Espais $T_0$ o de Kolmologrov. Donats dos punts diferents, hi ha un obert que conté un d’ells i no l’altre. - Espais $T_1$ o de Fréchet. Donats $xy$, hi ha oberts $U,V$ tals que $xU-V$. Aquest axioma és equivalent a que els punts siguin tancats. - Els espais $T_2$ són els espais Hausdorff. - Espais $T_3$ o regulars. Es compleix l’axioma $T_1$ i a més donats un tancat $F$ i punt $x F$, existeixen oberts disjunts $U,V$ tals que $xU, FV$. - Espais $T_4$ o normals. Es compleix l’axioma $T_1$ i a més donats tancats disjunts $A,B$, existeixen oberts disjunts $U,V$ tals que $AU, BV$.</li>
+</ul>
+<ol type="1">
+<li>Si X és un espai de Hausdorff i $AX$ és compacte, aleshores $A$ és tancat a $X$.</li>
+<li>Un producte d’espais no buits és Hausdorff si i només si ho són cada un dels factors.</li>
+<li>Sigui $f:XY$ una aplicació contínua i bijectiva. Suposem que $X$ és un espai compacte i $Y$ és un espai Hausdorff. Aleshores, $f$ és un homeomorfisme.</li>
+<li>Tot espai compacte Hausdorff és normal.</li>
+<li>Sigui X un espai compacte Hausdorff i $AX$ un subespai tancat. $X/A$ és compacte Hausdorff.</li>
+<li>Sigui $X$ un espai compacte Hausdorff i G un grup finit que actua sobre X. $X/G$ és compacte Hausdorff.</li>
+</ol>
+%
+%\begin{itemize} %
+Els punts són tancats, és a dir, la topologia de Zariski és $T_1$. %
+Si $K$ és un cos infinit, la topologia de Zariski a $K^n$ no és Hausdorff. %
+<p>$K^n$ amb a topologia de Zariski i tots els seus subespais són compactes. %\end{itemize} # Connexió Un espai topològic és connex si compleix - No és unió disconnexa de dos espais-p. - No és unió de dos oberts-p/tancats-p disjunts - Si $AZ$ és obert i tancat, aleshores $A=,Z$.</p>
+<ol type="1">
+<li>Siguin $Y_iX, iI$, subespais connexos d’un espai X, tals que $_iY_i$. Aleshores $_iY_i$ és un espai connex.</li>
+<li>Siguin $Y_iX, i=0,1,2,$, subespais connexos d’un espai X, tals que $i, Y_iY_{i+1}$. Aleshores $_iY_i$ és un espai connex.</li>
+<li>Si $f:XY$ és contínua i $AX$ és connex, aleshores $f(A)$ és connex.</li>
+<li>Un producte d’espais-p és connex si i només si ho és cada factor.</li>
+<li>$ABCl(A)X$ i suposem que A és connex. Aleshores B també ho és.</li>
+</ol>
+<h2 id="connexió-per-camins">connexió per camins</h2>
+<p>Un espai $X$ és  si $x,y X$ existeix un camí $$ amb $(0)=x, (1)=y$.</p>
+<p>Tot espai connex per camis és connex.</p>
+<p> Una corba tancada simple al pla $R^2$ divideix el pla en dos components connexos. Un d’aquests components és acotat i l’altre no. La corba és la seva frontera. # Varietats topològiques Un espai topològic $X$ és una varietat de dimensió n si tot punt té un entorn homeomorf a $R^n$, si X és Hausdorff i si té una base d’oberts numerable.</p>
+<h1 id="varietats-connexes">Varietats connexes</h1>
+<p>Si $M$ és una varietat de dimensió n i $M_i, iI$ els seus components connexos. 1. Els $M_i$ són oberts de M 2. $I$ és numerable, si M és compacta I és finit. 3. $M_i$ és una varietat de dimensió n. 4. M és unió disconnexa dels seus components connexos: $M=_{iI}M_i$.</p>
+<h2 id="orientacions">Orientacions</h2>
+<p>Direm que una varietat M és  si admet un atles on totes les funcions de transició conserven l’orientació.</p>
+<p>El producte de dues varietats orientables és orientable. $RP^n$ és orientable si i només si n és senar. $S+R$ és orientable si i només si S i R són orientables.</p>
+<p>$S_g:=S<sup>2+T+</sup>g+T$ $N_h:=RP<sup>2+</sup>h+RP^2$ $KRP<sup>2+RP</sup>2$</p>
+<p>$T+RP<sup>2RP</sup>2+ RP<sup>2+RP</sup>2$ per tant, $S_g+N_hN_k$ amb $k=h+2g$</p>
+<p>Tota superfície és triangulable.</p>
+<p>$(S)=v-a+c$ $(S+S’)=(S)+(S’)-2$ $(S_g)=2-2g$ $(N_h)=2-h$ Tota superfície compacta i connexa és homeomorfa a $S_g$ o $N_h$</p>
+<p>Dues superfícies (compactes i connexes) són homeomorfes si i només si $(S)=(S’)$ i tenen la mateixa orientablilitat.</p>
+<hr />
+<p>Eloi Torrents 2018</p>
+</div>
+<div class="side">
+</div></div>
+<footer style="clear:both">
+	
+	<center>
+		Copyright © 2020 Eloi Torrents
+	</center>
+</footer></body>
+</html>
