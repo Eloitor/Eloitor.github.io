@@ -42,7 +42,7 @@ Com escriure una web desde zero (facil)
 
 Inline math $x^3$
 
-$\\int\_0^\\infty x\^2 dx$
+$\int\_0^\infty x\^2 dx$
 
 <!-- ## Links interessants
 
