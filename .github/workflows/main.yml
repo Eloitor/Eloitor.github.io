@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: docker://pandoc/core
+      - uses: docker://eloitor/pandoc-make
       - name: Install dependencies # make and pandoc
         run: |
           cargo install pandoc-katex
