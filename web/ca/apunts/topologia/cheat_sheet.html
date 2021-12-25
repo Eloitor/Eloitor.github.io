@@ -40,173 +40,141 @@
 <div class="row">
 
   <div class="main">
-<p>$f(\bigcup_{i\in I}A_i)=\bigcup_{i\in I} f(A_i)$ $f(\bigcap_{i\in I}A_i)\subset \bigcap_{i\in I} f(A_i)$ igualtat si f és injectiva. $f^{-1}(\bigcup_{i\in I}A_i)=\bigcup_{i\in I} f^{-1}(A_i)$ $f^{-1}(\bigcap_{i\in I}A_i)= \bigcap_{i\in I} f^{-1}(A_i)$ $f^{-1}(A\smallsetminus B)=f^{-1}(A)\smallsetminus f^{-1}(B)$ ?? [[prop1]] $X\subset f^{-1}(f(X))$ igualtat si f injectiva. $f^{-1}(f(Y))\subset Y$ igualtat si f exhaustiva.</p>
-<h1 id="axiomàtica-despai-topològic">Axiomàtica d'espai topològic</h1>
-<p>$0, X\in \mathcal T$, $\bigcap_{i=1}^n A_i \in \mathcal T$, $\bigcup_{i\in I} A_i \in \mathcal T$</p>
-<p>Si $\mathcal T \subset \mathcal T'$ diem que $\mathcal T'$ és mes fina que $\mathcal T$.</p>
-<h2 id="algunes-topologies">Algunes topologies</h2>
-<ul>
-<li><strong>Grollera:</strong> $\mathcal T={\emptyset,X}$</li>
-<li><strong>Discreta:</strong> $\mathcal T=\operatorname{Parts}(X)$</li>
-<li><strong>Cofinita:</strong> $A\subset X$ obert $\Leftrightarrow A=\emptyset$ o $X-A$ és finit</li>
-</ul>
-<p><strong>Propietat de Hausdorff:</strong> Donats dos punts $x\neq y$ existeixen oberts disjunts $U,V$ tals que $x\in U, y \in V$.</p>
+<p><span class="math inline"><em>f</em>(⋃<sub><em>i</em> ∈ <em>I</em></sub><em>A</em><sub><em>i</em></sub>) = ⋃<sub><em>i</em> ∈ <em>I</em></sub><em>f</em>(<em>A</em><sub><em>i</em></sub>)</span> <span class="math inline"><em>f</em>(⋂<sub><em>i</em> ∈ <em>I</em></sub><em>A</em><sub><em>i</em></sub>) ⊂ ⋂<sub><em>i</em> ∈ <em>I</em></sub><em>f</em>(<em>A</em><sub><em>i</em></sub>)</span> igualtat si f és injectiva. <span class="math inline"><em>f</em><sup>−1</sup>(⋃<sub><em>i</em> ∈ <em>I</em></sub><em>A</em><sub><em>i</em></sub>) = ⋃<sub><em>i</em> ∈ <em>I</em></sub><em>f</em><sup>−1</sup>(<em>A</em><sub><em>i</em></sub>)</span> <span class="math inline"><em>f</em><sup>−1</sup>(⋂<sub><em>i</em> ∈ <em>I</em></sub><em>A</em><sub><em>i</em></sub>) = ⋂<sub><em>i</em> ∈ <em>I</em></sub><em>f</em><sup>−1</sup>(<em>A</em><sub><em>i</em></sub>)</span> <span class="math inline"><em>f</em><sup>−1</sup>(<em>A</em>∖<em>B</em>) = <em>f</em><sup>−1</sup>(<em>A</em>) ∖ <em>f</em><sup>−1</sup>(<em>B</em>)</span> ?? [[prop1]] <span class="math inline"><em>X</em> ⊂ <em>f</em><sup>−1</sup>(<em>f</em>(<em>X</em>))</span> igualtat si f injectiva. <span class="math inline"><em>f</em><sup>−1</sup>(<em>f</em>(<em>Y</em>)) ⊂ <em>Y</em></span> igualtat si f exhaustiva.</p>
+<h1 id="axiomàtica-despai-topològic">Axiomàtica d’espai topològic</h1>
+<p><span class="math inline">0, <em>X</em> ∈ 𝒯</span>, <span class="math inline">$\bigcap_{i=1}^n A_i \in \mathcal T$</span>, <span class="math inline">⋃<sub><em>i</em> ∈ <em>I</em></sub><em>A</em><sub><em>i</em></sub> ∈ 𝒯</span></p>
+<p>Si <span class="math inline">𝒯 ⊂ 𝒯′</span> diem que <span class="math inline">𝒯′</span> és mes fina que <span class="math inline">𝒯</span>. ## Algunes topologies - <strong>Grollera:</strong> <span class="math inline">𝒯 = {∅, <em>X</em>}</span> - <strong>Discreta:</strong> <span class="math inline">𝒯 = Parts (<em>X</em>)</span> - <strong>Cofinita:</strong> <span class="math inline"><em>A</em> ⊂ <em>X</em></span> obert <span class="math inline"> ⇔ <em>A</em> = ∅</span> o <span class="math inline"><em>X</em> − <em>A</em></span> és finit</p>
+<p><strong>Propietat de Hausdorff:</strong> Donats dos punts <span class="math inline"><em>x</em> ≠ <em>y</em></span> existeixen oberts disjunts <span class="math inline"><em>U</em>, <em>V</em></span> tals que <span class="math inline"><em>x</em> ∈ <em>U</em>, <em>y</em> ∈ <em>V</em></span>.</p>
 <p>[[Tot_espai_metric_es_Hausdorff | Tot espai mètric és Hausdorff]].</p>
-<p>No són Hausdorff: a) $X$ amb més d'un punt amb la topologia grollera. b) Un espai infinit amb la topologia cofinita c) $\mathbb R$ amb oberts $\emptyset, \mathbb R, (-\infty,x)\quad\forall x\in \mathbb R$</p>
-<h2 id="bases-duna-topologia">Bases d'una topologia</h2>
-<p>$\mathcal B$ és una base d'una topologia si $\forall A$ obert d'$X$ i tot punt $x\in A$, existeix un obert $B\in\B$ tal que $x\in B\subset A$. També és diu que $\B$ és una base d'oberts de $X$</p>
-<p><strong>Proposició 2.2</strong> Sigui X un conjunt $\B\subset \Parts(X)$. Si $\B$ compleix \ding{182} $\cup \mathcal B= X$ \ding{183} $\forall U,V\in \B$ i $\forall x\in U\cap V$, $\exists W\in \B$ tal que $x\in W \subset U \cap V.$ Aleshores $\exists !$ topologia $\tau a X$ que compleix</p>
+<p>No són Hausdorff: a) <span class="math inline"><em>X</em></span> amb més d’un punt amb la topologia grollera. b) Un espai infinit amb la topologia cofinita c) <span class="math inline">ℝ</span> amb oberts <span class="math inline">∅, ℝ, (−∞,<em>x</em>)  ∀<em>x</em> ∈ ℝ</span></p>
+<h2 id="bases-duna-topologia">Bases d’una topologia</h2>
+<p><span class="math inline">ℬ</span> és una base d’una topologia si <span class="math inline">∀<em>A</em></span> obert d’<span class="math inline"><em>X</em></span> i tot punt <span class="math inline"><em>x</em> ∈ <em>A</em></span>, existeix un obert <span class="math inline">$B\in\B$</span> tal que <span class="math inline"><em>x</em> ∈ <em>B</em> ⊂ <em>A</em></span>. També és diu que <span class="math inline">$\B$</span> és una base d’oberts de <span class="math inline"><em>X</em></span></p>
+<p><strong>Proposició 2.2</strong> Sigui X un conjunt <span class="math inline">$\B\subset \Parts(X)$</span>. Si <span class="math inline">$\B$</span> compleix  <span class="math inline"> ∪ ℬ = <em>X</em></span>  <span class="math inline">$\forall U,V\in \B$</span> i <span class="math inline">∀<em>x</em> ∈ <em>U</em> ∩ <em>V</em></span>, <span class="math inline">$\exists W\in \B$</span> tal que <span class="math inline"><em>x</em> ∈ <em>W</em> ⊂ <em>U</em> ∩ <em>V</em>.</span> Aleshores <span class="math inline">∃!</span> topologia <span class="math inline"><em>τ</em><em>a</em><em>X</em></span> que compleix</p>
 <ol type="1">
-<li>$\mathcal B$ és una base de la topologia $\mathcal T$</li>
-<li>$\mathcal T$ és la topologia més fina que conté $\mathcal B$</li>
+<li><span class="math inline">ℬ</span> és una base de la topologia <span class="math inline">𝒯</span></li>
+<li><span class="math inline">𝒯</span> és la topologia més fina que conté <span class="math inline">ℬ</span></li>
 </ol>
 <h2 id="entorns-interior-i-adherència">Entorns interior i adherència</h2>
-<p>$A$ és un <strong>entorn</strong> de $x\in X$ si existeix un obert $U$ tal que $x\in U \subset A.$</p>
-<p>$x$ és un punt interior de $A$ si $A$ és un entorn de $x$</p>
-<p>L'interior de $A$ és el conjunt de tots els punts interiors.</p>
+<p><span class="math inline"><em>A</em></span> és un <strong>entorn</strong> de <span class="math inline"><em>x</em> ∈ <em>X</em></span> si existeix un obert <span class="math inline"><em>U</em></span> tal que <span class="math inline"><em>x</em> ∈ <em>U</em> ⊂ <em>A</em>.</span></p>
+<p><span class="math inline"><em>x</em></span> és un punt interior de <span class="math inline"><em>A</em></span> si <span class="math inline"><em>A</em></span> és un entorn de <span class="math inline"><em>x</em></span></p>
+<p>L’interior de <span class="math inline"><em>A</em></span> és el conjunt de tots els punts interiors.</p>
 <ol type="1">
-<li>$\operatorname{Int}(A)$ és obert.</li>
-<li>$\operatorname{Int}(A)$ és la unió de tots els oberts continguts a A.</li>
-<li>$\operatorname{Int}(A)$ és l'obert més gran contingut a A. ($B\subset A$ obert $\implies B\subset\operatorname{Int}(A)$ \item $A$ és obert $\Leftrightarrow A=\operatorname{Int}(A)$</li>
+<li><span class="math inline">Int (<em>A</em>)</span> és obert.</li>
+<li><span class="math inline">Int (<em>A</em>)</span> és la unió de tots els oberts continguts a A.</li>
+<li><span class="math inline">Int (<em>A</em>)</span> és l’obert més gran contingut a A. (<span class="math inline"><em>B</em> ⊂ <em>A</em></span> obert <span class="math inline"> ⟹ <em>B</em> ⊂ Int (<em>A</em>)</span>
+<span class="math inline"><em>A</em></span> és obert <span class="math inline"> ⇔ <em>A</em> = Int (<em>A</em>)</span></li>
 </ol>
-<p>$x$ és un punt adherent a $A$ si tot entorn de $x$ talla $A$</p>
-<p>L'adherència de $A$ és el conjunt de tots els punts adherents.</p>
+<p><span class="math inline"><em>x</em></span> és un punt adherent a <span class="math inline"><em>A</em></span> si tot entorn de <span class="math inline"><em>x</em></span> talla <span class="math inline"><em>A</em></span></p>
+<p>L’adherència de <span class="math inline"><em>A</em></span> és el conjunt de tots els punts adherents.</p>
 <ol type="1">
-<li>$\operatorname{Cl}(A)$ és tancat.</li>
-<li>$\operatorname{Cl}(A)$ és intersecció de tots els tancats que contenen A.</li>
-<li>$\operatorname{Cl}(A)$ és el tancat més petit que conté A ($A\subset T$ T tancat $\implies \operatorname{Cl}(A)\subset T$) \item $A$ és tancat $\Leftrightarrow A=\operatorname{Cl}(A)$</li>
+<li><span class="math inline">Cl (<em>A</em>)</span> és tancat.</li>
+<li><span class="math inline">Cl (<em>A</em>)</span> és intersecció de tots els tancats que contenen A.</li>
+<li><span class="math inline">Cl (<em>A</em>)</span> és el tancat més petit que conté A (<span class="math inline"><em>A</em> ⊂ <em>T</em></span> T tancat <span class="math inline"> ⟹ Cl (<em>A</em>) ⊂ <em>T</em></span>)
+<span class="math inline"><em>A</em></span> és tancat <span class="math inline"> ⇔ <em>A</em> = Cl (<em>A</em>)</span></li>
 </ol>
-<p><strong>Proposició 2.5</strong> $\operatorname{Cl}(A)=X-\operatorname{Int}(X-A)$</p>
-<p><strong>Definició 2.6</strong> $A\subset X$ és dens si $\Cl(A)=X$</p>
-<p><strong>Definició 2.7</strong> La frontera d'un conjunt $A\subset X$ és defineix com $\partial A:=\operatorname{Cl}(A)\cap \operatorname{Cl}(X-A)$</p>
+<p><strong>Proposició 2.5</strong> <span class="math inline">Cl (<em>A</em>) = <em>X</em> − Int (<em>X</em>−<em>A</em>)</span></p>
+<p><strong>Definició 2.6</strong> <span class="math inline"><em>A</em> ⊂ <em>X</em></span> és dens si <span class="math inline">$\Cl(A)=X$</span></p>
+<p><strong>Definició 2.7</strong> La frontera d’un conjunt <span class="math inline"><em>A</em> ⊂ <em>X</em></span> és defineix com <span class="math inline">∂<em>A</em> := Cl (<em>A</em>) ∩ Cl (<em>X</em>−<em>A</em>)</span></p>
 <h2 id="aplicacions-contínues">Aplicacions contínues</h2>
-<p>$f$ és <strong>oberta</strong> si la imatge de tot obert és obert.</p>
-<p>$f$ és <strong>tancada</strong> si la imatge de tot tancat és tancat.</p>
-<p>$f$ és <strong>contínua</strong> si la antiimatge de tot obert és obert.</p>
+<p><span class="math inline"><em>f</em></span> és <strong>oberta</strong> si la imatge de tot obert és obert.</p>
+<p><span class="math inline"><em>f</em></span> és <strong>tancada</strong> si la imatge de tot tancat és tancat.</p>
+<p><span class="math inline"><em>f</em></span> és <strong>contínua</strong> si la antiimatge de tot obert és obert.</p>
 <h2 id="homeomorfísmes">Homeomorfísmes</h2>
-<p>$f:X\to Y$ diem que es homeomorfísme si compleix: f és contínua, bijectiva $f^{-1}:Y\to X$ contínua (o f és oberta)</p>
-<p><strong>Teorema 3.3</strong> Siguin $f:X\to Y$ i $g:Y\to Z$ aplicacions contínues. Suposem que es compleixen aquestes condicions:</p>
-<ol type="1">
-<li>f és exhaustiva i g és bijectiva</li>
-<li>Z compleix la propietat de Hausdorff</li>
-<li>X és homeomorf a un subesai tancat de $[0,1]^n$, $n&gt;0$</li>
-</ol>
+<p><span class="math inline"><em>f</em> : <em>X</em> → <em>Y</em></span> diem que es homeomorfísme si compleix: f és contínua, bijectiva <span class="math inline"><em>f</em><sup>−1</sup> : <em>Y</em> → <em>X</em></span> contínua (o f és oberta)</p>
+<p><strong>Teorema 3.3</strong> Siguin <span class="math inline"><em>f</em> : <em>X</em> → <em>Y</em></span> i <span class="math inline"><em>g</em> : <em>Y</em> → <em>Z</em></span> aplicacions contínues. Suposem que es compleixen aquestes condicions: 1. f és exhaustiva i g és bijectiva 2. Z compleix la propietat de Hausdorff 3. X és homeomorf a un subesai tancat de <span class="math inline">[0,1]<sup><em>n</em></sup></span>, <span class="math inline"><em>n</em> &gt; 0</span></p>
 <p>Aleshores g és un homeomorfisme.</p>
 <h1 id="subespais">Subespais</h1>
-<p><strong>Definició 4.1</strong> Sigui X un espai topològic i $A\subset X$.Direm que $U\subset A$ és un obert de A si existeix un obert W (de X) tal que $U=A\cap W$</p>
-<p>Els oberts de A formen la topologia induïda per la inclusió $A\subset X$. Diem que A és subespai de X</p>
+<p><strong>Definició 4.1</strong> Sigui X un espai topològic i <span class="math inline"><em>A</em> ⊂ <em>X</em></span>.Direm que <span class="math inline"><em>U</em> ⊂ <em>A</em></span> és un obert de A si existeix un obert W (de X) tal que <span class="math inline"><em>U</em> = <em>A</em> ∩ <em>W</em></span></p>
+<p>Els oberts de A formen la topologia induïda per la inclusió <span class="math inline"><em>A</em> ⊂ <em>X</em></span>. Diem que A és subespai de X</p>
 <ol type="1">
-<li>$T\subset A$ és tancat de A $\Leftrightarrow$ existeix un tancat $K \subset X$ tal que $T=A\cap K$.</li>
-<li>Si $A$ obert, llavors $U \subset A$ obert a A $\Leftrightarrow U$ obert a $X$.</li>
-<li>Si $A$ tancat, llavors $U \subset A$ tancat a A $\Leftrightarrow U$ tancat a $X$.</li>
-<li>l'aplicació inclusió $i:A\hookrightarrow X$ és contínua.</li>
-<li>La topologia induïda sobre A és la menys fina que fa que la inclusió $i:A\hookrightarrow X$ sigui contínua.</li>
-<li>Si $f:X\to Y$ és contínua, aleshores $f|_A:A\to X$ també ho és.</li>
-<li>Si X espai mètric amb distància d, $A\subset X$ La topologia donada per la distància d i la topologia induïda per la topologia de X coincideixen.</li>
-<li>$f:A\to X$ una aplicació, podem definir una topologia sobre A que tingui per oberts els conjunts $f^{-1}(U)$ per a cada obert U de X.</li>
+<li><span class="math inline"><em>T</em> ⊂ <em>A</em></span> és tancat de A <span class="math inline">⇔</span> existeix un tancat <span class="math inline"><em>K</em> ⊂ <em>X</em></span> tal que <span class="math inline"><em>T</em> = <em>A</em> ∩ <em>K</em></span>.</li>
+<li>Si <span class="math inline"><em>A</em></span> obert, llavors <span class="math inline"><em>U</em> ⊂ <em>A</em></span> obert a A <span class="math inline"> ⇔ <em>U</em></span> obert a <span class="math inline"><em>X</em></span>.</li>
+<li>Si <span class="math inline"><em>A</em></span> tancat, llavors <span class="math inline"><em>U</em> ⊂ <em>A</em></span> tancat a A <span class="math inline"> ⇔ <em>U</em></span> tancat a <span class="math inline"><em>X</em></span>.</li>
+<li>l’aplicació inclusió <span class="math inline"><em>i</em> : <em>A</em> ↪ <em>X</em></span> és contínua.</li>
+<li>La topologia induïda sobre A és la menys fina que fa que la inclusió <span class="math inline"><em>i</em> : <em>A</em> ↪ <em>X</em></span> sigui contínua.</li>
+<li>Si <span class="math inline"><em>f</em> : <em>X</em> → <em>Y</em></span> és contínua, aleshores <span class="math inline"><em>f</em>|<sub><em>A</em></sub> : <em>A</em> → <em>X</em></span> també ho és.</li>
+<li>Si X espai mètric amb distància d, <span class="math inline"><em>A</em> ⊂ <em>X</em></span> La topologia donada per la distància d i la topologia induïda per la topologia de X coincideixen.</li>
+<li><span class="math inline"><em>f</em> : <em>A</em> → <em>X</em></span> una aplicació, podem definir una topologia sobre A que tingui per oberts els conjunts <span class="math inline"><em>f</em><sup>−1</sup>(<em>U</em>)</span> per a cada obert U de X.</li>
 </ol>
-<p><strong>Continuïtat de funcions definides a trossos</strong> Siguin $X=A\cup B, Y$ espais topològics i sigui $f:X\to Y$ una aplicació. Suposem que $f|_A, f|_B$ són contínues. Aleshores:</p>
-<ol type="1">
-<li>Si A,B són oberts, f és contínua.</li>
-<li>Si A, B són tancats, f és contínua.</li>
-</ol>
+<p><strong>Continuïtat de funcions definides a trossos</strong> Siguin <span class="math inline"><em>X</em> = <em>A</em> ∪ <em>B</em>, <em>Y</em></span> espais topològics i sigui <span class="math inline"><em>f</em> : <em>X</em> → <em>Y</em></span> una aplicació. Suposem que <span class="math inline"><em>f</em>|<sub><em>A</em></sub>,<em>f</em>|<sub><em>B</em></sub></span> són contínues. Aleshores: 1. Si A,B són oberts, f és contínua. 2. Si A, B són tancats, f és contínua.</p>
 <h1 id="la-topologia-producte">La topologia producte</h1>
-<p>la <strong>topologia producte</strong> a $X\times Y$ és la topologia que té per base els conjunts de la forma $U\times V$ on U és obert de X i V és obert de Y. Anomenem els oberts $X\times Y$ <strong>oberts bàsics</strong></p>
+<p>la <strong>topologia producte</strong> a <span class="math inline"><em>X</em> × <em>Y</em></span> és la topologia que té per base els conjunts de la forma <span class="math inline"><em>U</em> × <em>V</em></span> on U és obert de X i V és obert de Y. Anomenem els oberts <span class="math inline"><em>X</em> × <em>Y</em></span> <strong>oberts bàsics</strong></p>
 <ol type="1">
-<li>les projeccions $\pi_X:X\times Y \to X$,$\pi_Y:X\times Y \to Y$ són contínues.</li>
-<li>Una aplicació $f:Z\to X\times Y$ és contínua si i només si els seus components són contínues, és a dir, si i només si $\pi_Xf$ i $\pi_Yf$ són aplicacións contínues.</li>
-<li>Les projeccions $\pi_X,\pi_Y$ són obertes. (En general no són tancades).</li>
-<li>Si $f_i:X_i\to Y_i, i=1,2$ són aplicacions contínues, aleshores $f_1 \times f_2:X_1\times X_2\to Y_1\times Y_2$ també és contínua.</li>
-<li>Si $X_1\cong X_2$ i $Y_1\cong Y_2$, aleshores $X_1\times Y_1 \cong X_2\times Y_2$</li>
-<li>$X\times {*} \cong X$</li>
-<li>$X\times Y \cong Y\times X$</li>
-<li>Si $A\subset X, B\subset Y$ i considerem $A\times B \subset X \times Y$. La topologia induïda sobre $A\times B$ com a subespai de $X\times Y$ i la topologia $A\times B$ considerant que A i B són espais topològics coincideixen.</li>
-<li>$\mathbb R^n$ amb la topologia induïda per la distància euclidiana i la topologia producte $\mathbb R^n=\mathbb R\times \dots \times \mathbb R$ coincideixen.</li>
+<li>les projeccions <span class="math inline"><em>π</em><sub><em>X</em></sub> : <em>X</em> × <em>Y</em> → <em>X</em></span>,<span class="math inline"><em>π</em><sub><em>Y</em></sub> : <em>X</em> × <em>Y</em> → <em>Y</em></span> són contínues.</li>
+<li>Una aplicació <span class="math inline"><em>f</em> : <em>Z</em> → <em>X</em> × <em>Y</em></span> és contínua si i només si els seus components són contínues, és a dir, si i només si <span class="math inline"><em>π</em><sub><em>X</em></sub><em>f</em></span> i <span class="math inline"><em>π</em><sub><em>Y</em></sub><em>f</em></span> són aplicacións contínues.</li>
+<li>Les projeccions <span class="math inline"><em>π</em><sub><em>X</em></sub>, <em>π</em><sub><em>Y</em></sub></span> són obertes. (En general no són tancades).</li>
+<li>Si <span class="math inline"><em>f</em><sub><em>i</em></sub> : <em>X</em><sub><em>i</em></sub> → <em>Y</em><sub><em>i</em></sub>, <em>i</em> = 1, 2</span> són aplicacions contínues, aleshores <span class="math inline"><em>f</em><sub>1</sub> × <em>f</em><sub>2</sub> : <em>X</em><sub>1</sub> × <em>X</em><sub>2</sub> → <em>Y</em><sub>1</sub> × <em>Y</em><sub>2</sub></span> també és contínua.</li>
+<li>Si <span class="math inline"><em>X</em><sub>1</sub> ≅ <em>X</em><sub>2</sub></span> i <span class="math inline"><em>Y</em><sub>1</sub> ≅ <em>Y</em><sub>2</sub></span>, aleshores <span class="math inline"><em>X</em><sub>1</sub> × <em>Y</em><sub>1</sub> ≅ <em>X</em><sub>2</sub> × <em>Y</em><sub>2</sub></span></li>
+<li><span class="math inline"><em>X</em> × { * } ≅ <em>X</em></span></li>
+<li><span class="math inline"><em>X</em> × <em>Y</em> ≅ <em>Y</em> × <em>X</em></span></li>
+<li>Si <span class="math inline"><em>A</em> ⊂ <em>X</em>, <em>B</em> ⊂ <em>Y</em></span> i considerem <span class="math inline"><em>A</em> × <em>B</em> ⊂ <em>X</em> × <em>Y</em></span>. La topologia induïda sobre <span class="math inline"><em>A</em> × <em>B</em></span> com a subespai de <span class="math inline"><em>X</em> × <em>Y</em></span> i la topologia <span class="math inline"><em>A</em> × <em>B</em></span> considerant que A i B són espais topològics coincideixen.</li>
+<li><span class="math inline">ℝ<sup><em>n</em></sup></span> amb la topologia induïda per la distància euclidiana i la topologia producte <span class="math inline">ℝ<sup><em>n</em></sup> = ℝ × … × ℝ</span> coincideixen.</li>
 </ol>
-<p>\begin{enumerate}[label=(\alph*)] \item El tor com a producte de circunferències. $T\cong S^1\times S^1$ \item El cilindre. $\mathbb R^n-{0}\cong S^{n-1}\times \mathbb R$ \end{enumerate} \subsection{El producte infinit} La <strong>topologia producte</strong> a $\Pi X_i$ és la topologia que té com a base d'oberts els productes $\Pi_{i\in I}U_i$ tals que \ding{182} Cada $U_i$ és un obert de $X_i$. \ding{183} $U_i=X_i$ excepte per a un nombre finit de $i \in I$.</p>
-<p>El <strong>conjunt de Cantor C</strong> és homeomorf a $\Pi_{i=1}^\infty {a,b}$</p>
-<p>%La corva de peano...</p>
-<h1 id="la-topologia-quocient">La topologia quocient</h1>
-<p>Suposem que $X$ és un espai topològic, Y és un conjunt i $p:X\to Y$ és una aplicació exhaustiva. La <strong>topologia quocient</strong> a $Y$ és la topologia que té per oberts els subconjunts $U\subset Y$ que tenen la propietat que $p^{-1}(U)$ és un obert de X. Direm que \guillemotleft Y té la topologia quocient per p\guillemotright</p>
-<ol type="1">
-<li>$p:X\to Y$ és continua.</li>
-<li>La topologia quocient és la topologia més fina sobre Y que fa que $p:X\to Y$ sigui continua.</li>
-<li>$T\subset Y$ és tancat si i només si $p^{-1}(T)$ és tancat de X.</li>
-<li>Sigui $f:Y\to Z$ una aplicació. Es compleix qe f és continua si i només si $f_p$ és continua.</li>
-</ol>
-<p>\begin{enumerate}[label=(\alph*)] \item $[0,1]\cong S^1$ \item $(0,t)\sim (1,t) , \forall t\in[0,1]$. $I^2/\sim\cong S^1 \times [0,1]$ \item $(0,t)\sim (1,t)$ i $(s,0)\sim (s,1) \forall s,t\in[0,1]$. $I^2/\sim\cong T^2$ \item $(0,t)\sim (1,1-t) , \forall t\in [0,1]$. Banda de Moebius. \item El disc $D^2:={x \in \mathbb R^2:||x|| \leq 1}$ quocient per la relació $(x,y)\sim (x,-y) \forall (x,y) \in S^1$ és l'esfera $S^2$. \item $(0,t)\sim (1,t)$ i $(s,0\sim (1-s,1) , \forall s,t\in [0,1]$. $I^2/\sim \cong$ Ampolla de Klein. \item El disc $D^2:={x \in \mathbb R^2:||x|| \leq 1}$ quocient per la relació $(x,y)\sim (-x,-y) \forall (x,y) \in S^1$ és el pla projectiu $\mathbb RP^2$.</p>
-<p>\end{enumerate}</p>
-<h2 id="lespai-projectiu">L'espai projectiu</h2>
-<p>L'<strong>espai projectiu</strong> de dimensió n $\mathbb RP^n$ és el conjunt de rectes de $\mathbb R^{n+1}$ que passen per l'origen de coordenades. $\mathbb RP^2 \cong D^2/{(x,y)\sim (-x,-y)\forall (x,y)\in S^1 \subset D^2}$ $\mathbb RP^n \cong S^n/{-v\sim v}$</p>
-<p>$(M\sqcup D^2)/\sim \cong \mathbb RP^2$ on $\sim$ és la identificació natural entre $S^1\subset D^2$ i $S^1\sim \partial M$ \subsection{Acció d'un grup sobre un espai} Una \textbf{acció d'un grup $G$ sobre un espai topològic X} consisteix en tenir, per cada $g\in G$, una aplicació continua $\theta_g:X\to X$ de manera que \ding{182} $\theta_1$ és la identitat $I:X\to X$. \ding{183} $\theta_g\theta_h=\theta_{gh} \forall g,h \in G$</p>
-<p>\begin{enumerate}[label=(\alph*)] \item Hi ha una acció de $\mathbb Z$ sobre $\mathbb R$ donada per $k \cdot x:=k+x$. Un domini fonamental és $D=[0,1)$. \item Hi ha una acció de $\mathbb Z^n$ sobre $\mathbb R^n$ donada per $(k_1,\dots,k_n)\cdot (x_1,\dots,x_n):=(k_1+x_1,\dots, k_n+x_n)$. Un domini fonamental és el cub $D=[0,1)^n$. \end{enumerate} \subsection{Quocient d'un espai per l'acció d'un grup} $x\sim y$ si i només si existeix $g\in G$ tal que gx=y. La aplicació de pas al quocient $\pi:X\to X/G:=X/\sim$ és oberta.</p>
-<p>\begin{enumerate}[label=(\alph*)] \item $\mathbb R/\mathbb Z\cong S^1$ amb l'acció $k \cdot x:=k+x$ \item $\mathbb R^n/\mathbb Z^n\cong T^n=S^1\times \dots \times S^1$ amb l'acció producte. \item el quocient de $S^n$ per la acció antipodal és $\mathbb RP^2$. \item $R^2/\langle S,R\rangle \cong K$ amb l'acció $S(x,y):=(x,y+1), T(x,y)=(x+1,-y)$ \item $[0,1]\times \frac{[0,1/2]}{{(x,0)\sim (1-x,1/2),(0,y)\sim (1,y):x,y\in [0,1]}}\cong K$ \end{enumerate}</p>
+<p>La <strong>topologia producte</strong> a <span class="math inline"><em>Π</em><em>X</em><sub><em>i</em></sub></span> és la topologia que té com a base d’oberts els productes <span class="math inline"><em>Π</em><sub><em>i</em> ∈ <em>I</em></sub><em>U</em><sub><em>i</em></sub></span> tals que  Cada <span class="math inline"><em>U</em><sub><em>i</em></sub></span> és un obert de <span class="math inline"><em>X</em><sub><em>i</em></sub></span>.  <span class="math inline"><em>U</em><sub><em>i</em></sub> = <em>X</em><sub><em>i</em></sub></span> excepte per a un nombre finit de <span class="math inline"><em>i</em> ∈ <em>I</em></span>.</p>
+<p>El <strong>conjunt de Cantor C</strong> és homeomorf a <span class="math inline"><em>Π</em><sub><em>i</em> = 1</sub><sup>∞</sup>{<em>a</em>, <em>b</em>}</span></p>
+<p>%La corva de peano… # La topologia quocient Suposem que <span class="math inline"><em>X</em></span> és un espai topològic, Y és un conjunt i <span class="math inline"><em>p</em> : <em>X</em> → <em>Y</em></span> és una aplicació exhaustiva. La <strong>topologia quocient</strong> a <span class="math inline"><em>Y</em></span> és la topologia que té per oberts els subconjunts <span class="math inline"><em>U</em> ⊂ <em>Y</em></span> que tenen la propietat que <span class="math inline"><em>p</em><sup>−1</sup>(<em>U</em>)</span> és un obert de X. Direm que Y té la topologia quocient per p. <span class="math inline"><em>p</em> : <em>X</em> → <em>Y</em></span> és continua. 2. La topologia quocient és la topologia més fina sobre Y que fa que <span class="math inline"><em>p</em> : <em>X</em> → <em>Y</em></span> sigui continua. 3. <span class="math inline"><em>T</em> ⊂ <em>Y</em></span> és tancat si i només si <span class="math inline"><em>p</em><sup>−1</sup>(<em>T</em>)</span> és tancat de X. 4. Sigui <span class="math inline"><em>f</em> : <em>Y</em> → <em>Z</em></span> una aplicació. Es compleix qe f és continua si i només si <span class="math inline"><em>f</em><sub><em>p</em></sub></span> és continua.</p>
+<h2 id="lespai-projectiu">L’espai projectiu</h2>
+<p>L’<strong>espai projectiu</strong> de dimensió n <span class="math inline">ℝ<em>P</em><sup><em>n</em></sup></span> és el conjunt de rectes de <span class="math inline">ℝ<sup><em>n</em> + 1</sup></span> que passen per l’origen de coordenades. <span class="math inline">ℝ<em>P</em><sup>2</sup> ≅ <em>D</em><sup>2</sup>/{(<em>x</em>,<em>y</em>) ∼ (−<em>x</em>,−<em>y</em>)∀(<em>x</em>,<em>y</em>) ∈ <em>S</em><sup>1</sup> ⊂ <em>D</em><sup>2</sup>}</span> <span class="math inline">ℝ<em>P</em><sup><em>n</em></sup> ≅ <em>S</em><sup><em>n</em></sup>/{ − <em>v</em> ∼ <em>v</em>}</span></p>
+<span class="math inline">(<em>M</em>⊔<em>D</em><sup>2</sup>)/ ∼  ≅ ℝ<em>P</em><sup>2</sup></span> on <span class="math inline">∼</span> és la identificació natural entre <span class="math inline"><em>S</em><sup>1</sup> ⊂ <em>D</em><sup>2</sup></span> i <span class="math inline"><em>S</em><sup>1</sup> ∼ ∂<em>M</em></span>
+<p>Una  consisteix en tenir, per cada <span class="math inline"><em>g</em> ∈ <em>G</em></span>, una aplicació continua <span class="math inline"><em>θ</em><sub><em>g</em></sub> : <em>X</em> → <em>X</em></span> de manera que  <span class="math inline"><em>θ</em><sub>1</sub></span> és la identitat <span class="math inline"><em>I</em> : <em>X</em> → <em>X</em></span>.  <span class="math inline"><em>θ</em><sub><em>g</em></sub><em>θ</em><sub><em>h</em></sub> = <em>θ</em><sub><em>g</em><em>h</em></sub>∀<em>g</em>, <em>h</em> ∈ <em>G</em></span></p>
+<p><span class="math inline"><em>x</em> ∼ <em>y</em></span> si i només si existeix <span class="math inline"><em>g</em> ∈ <em>G</em></span> tal que gx=y. La aplicació de pas al quocient <span class="math inline"><em>π</em> : <em>X</em> → <em>X</em>/<em>G</em> := <em>X</em>/∼</span> és oberta.</p>
 <h1 id="espais-compactes">Espais compactes</h1>
 <h2 id="recobriments">Recobriments</h2>
 <ol type="1">
-<li>${U_i}_{i\in I}$ és un recobriment d'un espai X si $X=\cup U_i$</li>
-<li>Si $U_i$ són oberts, ${U_i}$ és un recobriment obert.</li>
+<li><span class="math inline">{<em>U</em><sub><em>i</em></sub>}<sub><em>i</em> ∈ <em>I</em></sub></span> és un recobriment d’un espai X si <span class="math inline"><em>X</em> =  ∪ <em>U</em><sub><em>i</em></sub></span></li>
+<li>Si <span class="math inline"><em>U</em><sub><em>i</em></sub></span> són oberts, <span class="math inline">{<em>U</em><sub><em>i</em></sub>}</span> és un recobriment obert.</li>
 </ol>
-<p>Un espai topològic $X$ direm que és <strong>compacte</strong> si tot recobriment obert de X té algun subrecobriment finit.</p>
+<p>Un espai topològic <span class="math inline"><em>X</em></span> direm que és <strong>compacte</strong> si tot recobriment obert de X té algun subrecobriment finit.</p>
 <ol type="1">
-<li>La imatge d'un compacte per una aplicació continua és un compacte.</li>
-<li>Un subespai tancat d'un espai compacte és compacte.</li>
-<li>El producte d'una família d'espais compactes no buits és compacte si i només si cada espai ho és. %\subsection{la topologia compacte-obert} %Siguin $X$ i $Y$ espais topològics i definim $map(X,Y)={f:X\to Y: \text{f és continua}}$.</li>
+<li>La imatge d’un compacte per una aplicació continua és un compacte.</li>
+<li>Un subespai tancat d’un espai compacte és compacte.</li>
+<li>El producte d’una família d’espais compactes no buits és compacte si i només si cada espai ho és. %
+%Siguin <span class="math inline"><em>X</em></span> i <span class="math inline"><em>Y</em></span> espais topològics i definim <span class="math inline"><em>m</em><em>a</em><em>p</em>(<em>X</em>,<em>Y</em>) = {<em>f</em> : <em>X</em> → <em>Y</em> : f és continua}</span>.</li>
 </ol>
-<p>%Per a cada $A\subset X$ i $B \subset Y$, podem consider $\mathcal{F}_{(A,B)}:={f\in \mathcal{F}(X,Y) : F(A)\subset B}$ \subsection{Compactes de $\mathbb R^n$ } \textbf{Teorema de Heine-Borel} Un subespai de $\mathbb R^n$ - topologia ordinària- és compacte si i només si és tancat i acotat.</p>
+%Per a cada <span class="math inline"><em>A</em> ⊂ <em>X</em></span> i <span class="math inline"><em>B</em> ⊂ <em>Y</em></span>, podem consider <span class="math inline">ℱ<sub>(<em>A</em>,<em>B</em>)</sub> := {<em>f</em> ∈ ℱ(<em>X</em>,<em>Y</em>) : <em>F</em>(<em>A</em>) ⊂ <em>B</em>}</span>
+<p> Un subespai de <span class="math inline">ℝ<sup><em>n</em></sup></span> - topologia ordinària- és compacte si i només si és tancat i acotat.</p>
 <h2 id="compactificació-per-un-punt">Compactificació per un punt</h2>
-<p>Sigui $X$ un espai topològic. Definim $\tilde{X}=X\sqcup {<em>}$. Direm que $U \subset \tilde{X}$ és un obert si es compleix una de les següents condicions: \ding{182} $U\subset{X}$ i $U$ és un obert de $X$. \ding{183} $U=U'\sqcup{</em>}$, $U'$ és un obert de $X$ i $X-U'$ és un compacte.</p>
-<p>L'espai $X$ té la topologia induïda per la inclusió $X\subset \tilde{X}$. L'espai $\tilde{X}$ és comacte.</p>
-<p>La compactificació per un punt de $\mathbb R^n$ és homeomorf a $S^n$</p>
+<p>Sigui <span class="math inline"><em>X</em></span> un espai topològic. Definim <span class="math inline"><em>X̃</em> = <em>X</em> ⊔ { * }</span>. Direm que <span class="math inline"><em>U</em> ⊂ <em>X̃</em></span> és un obert si es compleix una de les següents condicions:  <span class="math inline"><em>U</em> ⊂ <em>X</em></span> i <span class="math inline"><em>U</em></span> és un obert de <span class="math inline"><em>X</em></span>.  <span class="math inline"><em>U</em> = <em>U</em>′ ⊔ { * }</span>, <span class="math inline"><em>U</em>′</span> és un obert de <span class="math inline"><em>X</em></span> i <span class="math inline"><em>X</em> − <em>U</em>′</span> és un compacte.</p>
+<p>L’espai <span class="math inline"><em>X</em></span> té la topologia induïda per la inclusió <span class="math inline"><em>X</em> ⊂ <em>X̃</em></span>. L’espai <span class="math inline"><em>X̃</em></span> és comacte.</p>
+<p>La compactificació per un punt de <span class="math inline">ℝ<sup><em>n</em></sup></span> és homeomorf a <span class="math inline"><em>S</em><sup><em>n</em></sup></span></p>
 <h1 id="espais-de-hausdorff">Espais de Hausdorff</h1>
 <ul>
-<li>Espais $T_0$ o de Kolmologrov. Donats dos punts diferents, hi ha un obert que conté un d'ells i no l'altre. - Espais $T_1$ o de Fréchet. Donats $x\neq y$, hi ha oberts $U,V$ tals que $x\in U-V$. Aquest axioma és equivalent a que els punts siguin tancats. - Els espais $T_2$ són els espais Hausdorff. - Espais $T_3$ o regulars. Es compleix l'axioma $T_1$ i a més donats un tancat $F$ i punt $x \not \in F$, existeixen oberts disjunts $U,V$ tals que $x\in U, F\subset V$. - Espais $T_4$ o normals. Es compleix l'axioma $T_1$ i a més donats tancats disjunts $A,B$, existeixen oberts disjunts $U,V$ tals que $A\subset U, B\subset V$.</li>
+<li>Espais <span class="math inline"><em>T</em><sub>0</sub></span> o de Kolmologrov. Donats dos punts diferents, hi ha un obert que conté un d’ells i no l’altre. - Espais <span class="math inline"><em>T</em><sub>1</sub></span> o de Fréchet. Donats <span class="math inline"><em>x</em> ≠ <em>y</em></span>, hi ha oberts <span class="math inline"><em>U</em>, <em>V</em></span> tals que <span class="math inline"><em>x</em> ∈ <em>U</em> − <em>V</em></span>. Aquest axioma és equivalent a que els punts siguin tancats. - Els espais <span class="math inline"><em>T</em><sub>2</sub></span> són els espais Hausdorff. - Espais <span class="math inline"><em>T</em><sub>3</sub></span> o regulars. Es compleix l’axioma <span class="math inline"><em>T</em><sub>1</sub></span> i a més donats un tancat <span class="math inline"><em>F</em></span> i punt <span class="math inline"><em>x</em> ∉ <em>F</em></span>, existeixen oberts disjunts <span class="math inline"><em>U</em>, <em>V</em></span> tals que <span class="math inline"><em>x</em> ∈ <em>U</em>, <em>F</em> ⊂ <em>V</em></span>. - Espais <span class="math inline"><em>T</em><sub>4</sub></span> o normals. Es compleix l’axioma <span class="math inline"><em>T</em><sub>1</sub></span> i a més donats tancats disjunts <span class="math inline"><em>A</em>, <em>B</em></span>, existeixen oberts disjunts <span class="math inline"><em>U</em>, <em>V</em></span> tals que <span class="math inline"><em>A</em> ⊂ <em>U</em>, <em>B</em> ⊂ <em>V</em></span>.</li>
 </ul>
 <ol type="1">
-<li>Si X és un espai de Hausdorff i $A\subset X$ és compacte, aleshores $A$ és tancat a $X$.</li>
-<li>Un producte d'espais no buits és Hausdorff si i només si ho són cada un dels factors.</li>
-<li>Sigui $f:X\to Y$ una aplicació contínua i bijectiva. Suposem que $X$ és un espai compacte i $Y$ és un espai Hausdorff. Aleshores, $f$ és un homeomorfisme.</li>
+<li>Si X és un espai de Hausdorff i <span class="math inline"><em>A</em> ⊂ <em>X</em></span> és compacte, aleshores <span class="math inline"><em>A</em></span> és tancat a <span class="math inline"><em>X</em></span>.</li>
+<li>Un producte d’espais no buits és Hausdorff si i només si ho són cada un dels factors.</li>
+<li>Sigui <span class="math inline"><em>f</em> : <em>X</em> → <em>Y</em></span> una aplicació contínua i bijectiva. Suposem que <span class="math inline"><em>X</em></span> és un espai compacte i <span class="math inline"><em>Y</em></span> és un espai Hausdorff. Aleshores, <span class="math inline"><em>f</em></span> és un homeomorfisme.</li>
 <li>Tot espai compacte Hausdorff és normal.</li>
-<li>Sigui X un espai compacte Hausdorff i $A\subset X$ un subespai tancat. $X/A$ és compacte Hausdorff.</li>
-<li>Sigui $X$ un espai compacte Hausdorff i G un grup finit que actua sobre X. $X/G$ és compacte Hausdorff.</li>
+<li>Sigui X un espai compacte Hausdorff i <span class="math inline"><em>A</em> ⊂ <em>X</em></span> un subespai tancat. <span class="math inline"><em>X</em>/<em>A</em></span> és compacte Hausdorff.</li>
+<li>Sigui <span class="math inline"><em>X</em></span> un espai compacte Hausdorff i G un grup finit que actua sobre X. <span class="math inline"><em>X</em>/<em>G</em></span> és compacte Hausdorff.</li>
 </ol>
-<p>%\subsection{La topologia de Zariski} %\begin{itemize} % \item Els punts són tancats, és a dir, la topologia de Zariski és $T_1$. % \item Si $K$ és un cos infinit, la topologia de Zariski a $K^n$ no és Hausdorff. % \item $K^n$ amb a topologia de Zariski i tots els seus subespais són compactes. %\end{itemize}</p>
-<h1 id="connexió">Connexió</h1>
-<p>Un espai topològic és connex si compleix</p>
-<ul>
-<li>No és unió disconnexa de dos espais-p.</li>
-<li>No és unió de dos oberts-p/tancats-p disjunts</li>
-<li>Si $A\subset Z$ és obert i tancat, aleshores $A=\emptyset,Z$.</li>
-</ul>
+%
+%\begin{itemize} %
+Els punts són tancats, és a dir, la topologia de Zariski és <span class="math inline"><em>T</em><sub>1</sub></span>. %
+Si <span class="math inline"><em>K</em></span> és un cos infinit, la topologia de Zariski a <span class="math inline"><em>K</em><sup><em>n</em></sup></span> no és Hausdorff. %
+<p><span class="math inline"><em>K</em><sup><em>n</em></sup></span> amb a topologia de Zariski i tots els seus subespais són compactes. %\end{itemize} # Connexió Un espai topològic és connex si compleix - No és unió disconnexa de dos espais-p. - No és unió de dos oberts-p/tancats-p disjunts - Si <span class="math inline"><em>A</em> ⊂ <em>Z</em></span> és obert i tancat, aleshores <span class="math inline"><em>A</em> = ∅, <em>Z</em></span>.</p>
 <ol type="1">
-<li>Siguin $Y_i\subset X, i\in I$, subespais connexos d'un espai X, tals que $\bigcap_iY_i\neq \emptyset$. Aleshores $\bigcup_iY_i$ és un espai connex.</li>
-<li>Siguin $Y_i\subset X, i=0,1,2,\dots$, subespais connexos d'un espai X, tals que $\forall i, Y_i\cap Y_{i+1}\neq \emptyset$. Aleshores $\bigcup_iY_i$ és un espai connex.</li>
-<li>Si $f:X\to Y$ és contínua i $A\subset X$ és connex, aleshores $f(A)$ és connex.</li>
-<li>Un producte d'espais-p és connex si i només si ho és cada factor.</li>
-<li>$A\subset B\subset Cl(A)\subset X$ i suposem que A és connex. Aleshores B també ho és.</li>
+<li>Siguin <span class="math inline"><em>Y</em><sub><em>i</em></sub> ⊂ <em>X</em>, <em>i</em> ∈ <em>I</em></span>, subespais connexos d’un espai X, tals que <span class="math inline">⋂<sub><em>i</em></sub><em>Y</em><sub><em>i</em></sub> ≠ ∅</span>. Aleshores <span class="math inline">⋃<sub><em>i</em></sub><em>Y</em><sub><em>i</em></sub></span> és un espai connex.</li>
+<li>Siguin <span class="math inline"><em>Y</em><sub><em>i</em></sub> ⊂ <em>X</em>, <em>i</em> = 0, 1, 2, …</span>, subespais connexos d’un espai X, tals que <span class="math inline">∀<em>i</em>, <em>Y</em><sub><em>i</em></sub> ∩ <em>Y</em><sub><em>i</em> + 1</sub> ≠ ∅</span>. Aleshores <span class="math inline">⋃<sub><em>i</em></sub><em>Y</em><sub><em>i</em></sub></span> és un espai connex.</li>
+<li>Si <span class="math inline"><em>f</em> : <em>X</em> → <em>Y</em></span> és contínua i <span class="math inline"><em>A</em> ⊂ <em>X</em></span> és connex, aleshores <span class="math inline"><em>f</em>(<em>A</em>)</span> és connex.</li>
+<li>Un producte d’espais-p és connex si i només si ho és cada factor.</li>
+<li><span class="math inline"><em>A</em> ⊂ <em>B</em> ⊂ <em>C</em><em>l</em>(<em>A</em>) ⊂ <em>X</em></span> i suposem que A és connex. Aleshores B també ho és.</li>
 </ol>
 <h2 id="connexió-per-camins">connexió per camins</h2>
-<p>Un espai $X$ és \textbf{connex per camins o arcconnex} si $\forall x,y \in X$ existeix un camí $\omega$ amb $\omega(0)=x, \omega(1)=y$.</p>
+<p>Un espai <span class="math inline"><em>X</em></span> és  si <span class="math inline">∀<em>x</em>, <em>y</em> ∈ <em>X</em></span> existeix un camí <span class="math inline"><em>ω</em></span> amb <span class="math inline"><em>ω</em>(0) = <em>x</em>, <em>ω</em>(1) = <em>y</em></span>.</p>
 <p>Tot espai connex per camis és connex.</p>
-<p>\subsection{Components connexos d'un espai} \textbf{Teorema de la corba de Jordan} Una corba tancada simple al pla $\mathbb R^2$ divideix el pla en dos components connexos. Un d'aquests components és acotat i l'altre no. La corba és la seva frontera.</p>
-<h1 id="varietats-topològiques">Varietats topològiques</h1>
-<p>Un espai topològic $X\neq \emptyset$ és una varietat de dimensió n si tot punt té un entorn homeomorf a $\mathbb R^n$, si X és Hausdorff i si té una base d'oberts numerable.</p>
+<p> Una corba tancada simple al pla <span class="math inline">ℝ<sup>2</sup></span> divideix el pla en dos components connexos. Un d’aquests components és acotat i l’altre no. La corba és la seva frontera. # Varietats topològiques Un espai topològic <span class="math inline"><em>X</em> ≠ ∅</span> és una varietat de dimensió n si tot punt té un entorn homeomorf a <span class="math inline">ℝ<sup><em>n</em></sup></span>, si X és Hausdorff i si té una base d’oberts numerable.</p>
 <h1 id="varietats-connexes">Varietats connexes</h1>
-<p>Si $M$ és una varietat de dimensió n i $M_i, i\in I$ els seus components connexos.</p>
-<ol type="1">
-<li>Els $M_i$ són oberts de M</li>
-<li>$I$ és numerable, si M és compacta I és finit.</li>
-<li>$M_i$ és una varietat de dimensió n.</li>
-<li>M és unió disconnexa dels seus components connexos: $M=\sqcup_{i\in I}M_i$.</li>
-</ol>
+<p>Si <span class="math inline"><em>M</em></span> és una varietat de dimensió n i <span class="math inline"><em>M</em><sub><em>i</em></sub>, <em>i</em> ∈ <em>I</em></span> els seus components connexos. 1. Els <span class="math inline"><em>M</em><sub><em>i</em></sub></span> són oberts de M 2. <span class="math inline"><em>I</em></span> és numerable, si M és compacta I és finit. 3. <span class="math inline"><em>M</em><sub><em>i</em></sub></span> és una varietat de dimensió n. 4. M és unió disconnexa dels seus components connexos: <span class="math inline"><em>M</em> = ⊔<sub><em>i</em> ∈ <em>I</em></sub><em>M</em><sub><em>i</em></sub></span>.</p>
 <h2 id="orientacions">Orientacions</h2>
-<p>Direm que una varietat M és \textbf{orientable} si admet un atles on totes les funcions de transició conserven l'orientació.</p>
-<p>El producte de dues varietats orientables és orientable. $\mathbb RP^n$ és orientable si i només si n és senar. $S+R$ és orientable si i només si S i R són orientables.</p>
-<p>$S_g:=S^2+T+\dots^g+T$ $N_h:=\mathbb RP^2+\dots^h+\mathbb RP^2$ $K\cong\mathbb RP^2+\mathbb RP^2$</p>
-<p>$T+\mathbb RP^2\cong \mathbb RP^2+ \mathbb RP^2+\mathbb RP^2$ per tant, $S_g+N_h\cong N_k$ amb $k=h+2g$</p>
+<p>Direm que una varietat M és  si admet un atles on totes les funcions de transició conserven l’orientació.</p>
+<p>El producte de dues varietats orientables és orientable. <span class="math inline">ℝ<em>P</em><sup><em>n</em></sup></span> és orientable si i només si n és senar. <span class="math inline"><em>S</em> + <em>R</em></span> és orientable si i només si S i R són orientables.</p>
+<p><span class="math inline"><em>S</em><sub><em>g</em></sub> := <em>S</em><sup>2</sup> + <em>T</em> + …<sup><em>g</em></sup> + <em>T</em></span> <span class="math inline"><em>N</em><sub><em>h</em></sub> := ℝ<em>P</em><sup>2</sup> + …<sup><em>h</em></sup> + ℝ<em>P</em><sup>2</sup></span> <span class="math inline"><em>K</em> ≅ ℝ<em>P</em><sup>2</sup> + ℝ<em>P</em><sup>2</sup></span></p>
+<p><span class="math inline"><em>T</em> + ℝ<em>P</em><sup>2</sup> ≅ ℝ<em>P</em><sup>2</sup> + ℝ<em>P</em><sup>2</sup> + ℝ<em>P</em><sup>2</sup></span> per tant, <span class="math inline"><em>S</em><sub><em>g</em></sub> + <em>N</em><sub><em>h</em></sub> ≅ <em>N</em><sub><em>k</em></sub></span> amb <span class="math inline"><em>k</em> = <em>h</em> + 2<em>g</em></span></p>
 <p>Tota superfície és triangulable.</p>
-<p>$\chi(S)=v-a+c$ $\chi(S+S')=\chi(S)+\chi(S')-2$ $\chi(S_g)=2-2g$ $\chi(N_h)=2-h$ Tota superfície compacta i connexa és homeomorfa a $S_g$ o $N_h$</p>
-<p>Dues superfícies (compactes i connexes) són homeomorfes si i només si $\chi(S)=\chi(S')$ i tenen la mateixa orientablilitat.</p>
+<p><span class="math inline"><em>χ</em>(<em>S</em>) = <em>v</em> − <em>a</em> + <em>c</em></span> <span class="math inline"><em>χ</em>(<em>S</em>+<em>S</em>′) = <em>χ</em>(<em>S</em>) + <em>χ</em>(<em>S</em>′) − 2</span> <span class="math inline"><em>χ</em>(<em>S</em><sub><em>g</em></sub>) = 2 − 2<em>g</em></span> <span class="math inline"><em>χ</em>(<em>N</em><sub><em>h</em></sub>) = 2 − <em>h</em></span> Tota superfície compacta i connexa és homeomorfa a <span class="math inline"><em>S</em><sub><em>g</em></sub></span> o <span class="math inline"><em>N</em><sub><em>h</em></sub></span></p>
+<p>Dues superfícies (compactes i connexes) són homeomorfes si i només si <span class="math inline"><em>χ</em>(<em>S</em>) = <em>χ</em>(<em>S</em>′)</span> i tenen la mateixa orientablilitat.</p>
 <hr />
 <p>Eloi Torrents 2018</p>
 </div>
