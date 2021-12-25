@@ -5,23 +5,18 @@ other_files_src = $(shell find src/ -type f -name '*.jpg ')$(shell find src/ -ty
 other_files_web = $(patsubst src/%, web/%, $(other_files_src))
 
 .PHONY: all
-all: $(html_files) $(other_files_web) web/.htaccess
+all: $(html_files) $(other_files_web)
 
+web/%.html: src/%.md templates/webpage.html
 
-web/ca/%.html: src/ca/%.md templates/webpage.html
+	$(eval lang=$(word 2,$(subst /," ",$@)))
+
 	mkdir -p "$(@D)"
 	pandoc  --template templates/webpage.html \
 		--css $(shell (echo $(patsubst web/%, %, $(@D)) | sed "s/[^/]*/../g"))/styles.css \
 		-V root=$(shell (echo $(patsubst web/%, %, $(@D)) | sed "s/[^/]*/../g")) \
 		--metadata title="Eloi Torrents" \
-		-V ca \
-		$< -o $@
-web/en/%.html: src/en/%.md templates/webpage.html
-	mkdir -p "$(@D)"
-	pandoc  --template templates/webpage.html \
-		--css $(shell echo $(patsubst web/%, %, $(@D)) | sed "s/[^/]*/../g")/styles.css \
-		--metadata title="Eloi Torrents" \
-		-V en \
+		-V $(lang) \
 		$< -o $@
 
 web/%: src/%
