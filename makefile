@@ -4,6 +4,7 @@ html_files = $(patsubst src/%.md, web/%.html, $(md_files))
 other_files_src = $(shell find src/ -type f \( -iname \*.jpg -o -iname \*.png -o -iname \*.css -o -iname \*.html \))
 other_files_web = $(patsubst src/%, web/%, $(other_files_src))
 
+$(shell mkdir -p web)
 
 .PHONY: all
 all: $(html_files) $(other_files_web)
