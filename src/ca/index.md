@@ -13,7 +13,7 @@ math: true
 
 <div class="square-group">
 <div>
-**Teoria de nombres**
+ **Teoria de nombres**
 
 - [Teoria de cossos de classe](teoria_de_nombres/teoria_de_cossos_de_classe)
 - [Formes modulars](formes_modulars.html)
