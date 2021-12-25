@@ -12,7 +12,7 @@ web/%.html: src/%.md templates/webpage.html
 	$(eval lang=$(word 2,$(subst /," ",$@)))
 
 	mkdir -p "$(@D)"
-	pandoc -f markdown-tex_math_dollars \
+	pandoc -f gfm \
 		--template templates/webpage.html \
 		--css $(shell (echo $(patsubst web/%, %, $(@D)) | sed "s/[^/]*/../g"))/styles.css \
 		-V root=$(shell (echo $(patsubst web/%, %, $(@D)) | sed "s/[^/]*/../g")) \
