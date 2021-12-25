@@ -14,10 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: docker://eloitor/pandoc-make
-      - name: Install dependencies # make and pandoc
-        run: |
-          cargo install pandoc-katex
-          pandoc --version
       - uses: actions/checkout@v2
       - name: Build
         run: |
