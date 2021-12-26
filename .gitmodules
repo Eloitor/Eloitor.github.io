@@ -1,0 +1,3 @@
+[submodule "filters/pandoc-latex-math"]
+	path = filters/pandoc-latex-math
+	url = https://github.com/oltolm/pandoc-latex-math.git

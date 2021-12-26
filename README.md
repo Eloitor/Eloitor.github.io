@@ -33,6 +33,12 @@ make        # build the HTML files
 make auto   # build the HTML files every time a source file changes (uses entr)
 ```
 
+````markdown .numberLines
+```lean
+#check 1 + 1
+```
+````
+
 
 ## Deploy to Codeberg
 
@@ -48,6 +54,8 @@ https://docs.codeberg.org/advanced/migrating-repos/
 
 - [ ] [Pandoc filters](https://github.com/jgm/pandocfilters)
 - [ ] More documentation
-- [ ] Lean syntax highlighting and "Try me" links
-
+- [ ] Lean syntax highlighting
+    https://jeci.fr/blog/2014/pandoc-highlight-groovy.html
+- [x] Lean "Try me" links
+- [ ] Theorems http://gedenkt.at/blog/theorems-in-pandoc/
 https://xy2401.com/web-get/www.pandoc.org/lua-filters.html

@@ -1,3 +1,7 @@
+---
+math: katex
+---
+
 # Splitting d'algebres de quaternions
 
 
