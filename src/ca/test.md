@@ -43,6 +43,12 @@ def principal {X : Type} (s : set X) : filter X :=
 ```
 
 
+Now we handle a completely different problem.
+
+```lean-reset
+#check 1 + 1
+```
+
 
 Some zig code:
 
