@@ -63,3 +63,19 @@ Some python code:
 ```python
 print("Hello, $world$!")
 ```
+
+Agda code:
+
+```{.agda}
+module Main where
+
+main = putStrLn "Hello, world!"
+```
+
+Some **rust** code:
+
+```rust
+fn main() {
+    println!("Hello, world!");
+}
+```

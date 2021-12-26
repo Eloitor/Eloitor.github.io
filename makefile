@@ -28,6 +28,7 @@ web/%.html: src/%.md $(templates)
 		--css $(shell (echo $(patsubst web/%, %, $(@D)) | sed "s/[^/]*/../g"))/styles.css \
 		-V root=$(shell (echo $(patsubst web/%, %, $(@D)) | sed "s/[^/]*/../g")) \
 		--metadata title="Eloi Torrents" \
+		--syntax-definition=lean_syntax.xml \
 		-V $(lang) \
 		$< -o $@
 
