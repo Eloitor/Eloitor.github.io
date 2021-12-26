@@ -7,12 +7,12 @@ other_files_web = $(patsubst src/%, web/%, $(other_files_src))
 
 .PHONY: all clean auto init
 
-init:
-	# Check if pandoc is installed
-	if [ ! -x $(which pandoc) ]; then
-		echo "pandoc is not installed. Please install it first."
-		exit 1
-	fi
+# init:
+# 	# Check if pandoc is installed
+# 	# if [ ! -x $(which pandoc) ]; then
+# 	# 	echo "pandoc is not installed. Please install it first."
+# 	# 	exit 1
+# 	# fi
 
 
 all: $(html_files) $(other_files_web)
