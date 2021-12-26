@@ -42,3 +42,12 @@ https://docs.codeberg.org/advanced/migrating-repos/
 
 3. In the new repo, go to settings > branches
 4. Select the "pages" branch and click "update default branch"
+
+
+## Upcoming features:
+
+- [ ] [Pandoc filters](https://github.com/jgm/pandocfilters)
+- [ ] More documentation
+- [ ] Lean syntax highlighting and "Try me" links
+
+https://xy2401.com/web-get/www.pandoc.org/lua-filters.html

@@ -5,7 +5,16 @@ templates = $(shell find templates/ -type f -name '*.html')
 other_files_src = $(shell find src/ -type f \( -iname \*.jpg -o -iname \*.png -o -iname \*.css -o -iname \*.html \))
 other_files_web = $(patsubst src/%, web/%, $(other_files_src))
 
-.PHONY: all clean auto
+.PHONY: all clean auto init
+
+init:
+	# Check if pandoc is installed
+	if [ ! -x $(which pandoc) ]; then
+		echo "pandoc is not installed. Please install it first."
+		exit 1
+	fi
+
+
 all: $(html_files) $(other_files_web)
 
 web/%.html: src/%.md $(templates)
@@ -13,7 +22,8 @@ web/%.html: src/%.md $(templates)
 	$(eval lang=$(word 2,$(subst /," ",$@)))
 
 	mkdir -p "$(@D)"
-	pandoc -f markdown-tex_math_dollars-raw_tex \
+	pandoc --lua-filter=filters/lean.lua \
+		 -f markdown+pipe_tables-tex_math_dollars-raw_tex \
 		--template templates/webpage.html \
 		--css $(shell (echo $(patsubst web/%, %, $(@D)) | sed "s/[^/]*/../g"))/styles.css \
 		-V root=$(shell (echo $(patsubst web/%, %, $(@D)) | sed "s/[^/]*/../g")) \
