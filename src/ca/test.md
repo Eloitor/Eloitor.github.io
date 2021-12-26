@@ -31,8 +31,9 @@ structure filter (X : Type) :=
 ```
 
 With this definition, we can proceed to define the principal filter of a set.
+Note that we can also add numberlines.
 
-```lean
+```{.lean .numberLines}
 open set
 
 def principal {X : Type} (s : set X) : filter X :=
@@ -45,7 +46,7 @@ def principal {X : Type} (s : set X) : filter X :=
 
 Now we handle a completely different problem.
 
-```lean-reset
+```{.lean .reset .numberLines startFrom="1"}
 #check 1 + 1
 ```
 

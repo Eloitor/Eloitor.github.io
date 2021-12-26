@@ -13,8 +13,8 @@ function CodeBlock(block)
         return output
     end
 
-    if block.classes[1] == "lean" or block.classes[1] == "lean-reset"  then
-        if block.classes[1] == "lean-reset" then
+    if block.classes[1] == "lean" then
+        if block.classes[2] == "reset" then
             current_code = "".. encodeString(block.text  .. "\n\n")
         else
             current_code = current_code .. encodeString(block.text  .. "\n\n")
